@@ -43,13 +43,20 @@ She read it twice. Then she typed the question she had been carrying since Novem
 
 The answer came back in about a second: *Zero. The database has no customer records yet.*
 
-Maggie laughed, which surprised her. It was, she realised, the first time a computer had ever told
-her the truth about an empty database instead of showing her a form.
+![The assistant in its terminal: the same question, answered from the ERP, with the criterion and the records behind the number](../../assets/screens/assistant-04-tui-answer.png)
 
 A model that guessed would have said something like "you have approximately 40 customers" or
 produced a table of plausible names, because that is what a language model does when it has no
 facts: it produces the most likely text. This one had been built to *look*, and looking at an empty
 table produces the only honest answer there is.
+
+The figure above is from the same installation a few days later, when the four demonstration
+customers existed. Two things in it are worth reading twice: the answer names the criterion
+(*res.partner with customer_rank > 0*) and says it was confirmed by a second, independent count; and
+it volunteers three observations nobody asked for—that the four customers are stored as individuals
+rather than companies, that none of them has an email address, and which records were excluded from
+the count and why. That is not a report. That is what a careful colleague says when they hand you a
+number.
 
 ---
 

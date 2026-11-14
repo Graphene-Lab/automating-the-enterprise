@@ -180,6 +180,36 @@ That is a design decision every company has to make, and the default should be t
 assistant with a tool it does not need is an assistant that will eventually use it, at the worst
 possible moment, for a reason that seemed sensible to a language model.
 
+There is a better answer than narrowing the list, though, and it is the one this book recommends.
+
+A language model chooses a tool by reading what the tool says it is for. If the ERP connector
+describes itself as *query and manage Odoo ERP data* and nothing more, then an instruction containing
+the words "customer" and "address" is a fair match for a web search—an address is, after all, a thing
+you look up. The model is not being stupid; it is being literal about two equally plausible
+descriptions.
+
+The fix is one sentence in the tool's own description, in the place the model actually reads:
+*this tool is the company's system of record: for any question or action about customers, suppliers,
+products, prices, sales, purchases, invoices, payments or stock, use these methods rather than a web
+search, a file or general knowledge; look a named record up here first, and say so when it is not
+here.*
+
+That sentence was added, the four tools were put back, and the behaviour changed: the same
+installation, with the file tool, the web tool and the version control tool all enabled, now answers
+"how many customers do we have" from the ERP, in one second, with the criterion it used and the
+records behind the number.
+
+Two lessons, and they point in opposite directions.
+
+**For the company:** do not solve a routing problem by taking tools away. A real office needs the
+web, the files and the ERP at once; an assistant that has been crippled to behave is an assistant
+that will fail on the day the work needs the tool you removed.
+
+**For whoever writes the tool:** the description is the interface. It is read by the model on every
+turn, it costs nothing, and a single sentence about *when to use this and when not to* is worth more
+than any amount of prompt engineering in the instruction. The rules that matter belong in the tool's
+summary, in short imperative lines—not in a manual, and not in a remark the model never sees.
+
 ## The shape of the thing
 
 When the installer finished, Riverton had five programs where it used to have a filing cabinet.

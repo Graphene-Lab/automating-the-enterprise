@@ -83,6 +83,28 @@ The number is the part that matters. INV/2026/0007 is the seventh invoice of the
 no sixth missing and no eighth already used, because the sequence does not allow it. Six hundred
 years after Pacioli, the numbering of the pages is still how a ledger proves it is complete.
 
+![The invoice created and posted by the assistant, with the number, the totals and the two refusals it met on the way](../../assets/screens/assistant-08-invoice.png)
+
+The figure above is the real run, and it contains the most instructive passage in this book. The
+assistant tried the direct route first—the private method that creates an invoice from an order—and
+the ERP refused it, because private methods cannot be called from outside. It did not look for a way
+around the refusal. It used the *documented* route instead, the standard "Create Invoice" wizard that
+a person would have reached by clicking, and it said so in the answer: *the direct call was refused
+(private method, HTTP 403), so the standard wizard was used.*
+
+That is the behaviour a company wants from a colleague with a new system: when the door is locked,
+find the door that is meant to be used, and say which one you used. A machine that instead hunted
+for a way through the wall would be a machine you could not leave alone with your ledger.
+
+![The same invoice in the ERP: number INV/2026/00001, customer, dates, totals and the state *Posted*](../../assets/screens/odoo-09-invoice-list.png)
+
+The two figures belong together. On the left, the assistant's account of what it did; on the right,
+the ERP's own record of the result—the same number, the same total, the state *Posted*, and the
+audit trail that says who created it and when. The demonstration installation applies fifteen per
+cent tax on these products because that is what its localisation configured; the narrative uses the
+twenty per cent standard rate, and the difference is exactly the kind of thing a company discovers
+when it reads its own configuration instead of assuming it.
+
 ---
 
 ## The print

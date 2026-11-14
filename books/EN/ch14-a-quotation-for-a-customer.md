@@ -161,6 +161,18 @@ Notice what the assistant added at the end: *stock reserved, available*. It had 
 had checked, because the next thing that would happen is a delivery, and a delivery that cannot be
 made is worse than a quotation that cannot be confirmed.
 
+![The same operation on the demonstration installation: order S00002 confirmed, with the totals, the state and two things the assistant thought you should know](../../assets/screens/assistant-06-order.png)
+
+The figure above is worth reading carefully, because it is the behaviour this chapter has been
+arguing for, captured rather than described. The assistant reports the order number, the state
+(*draft → sale*), the untaxed amount, the tax and the total; then it volunteers two things that
+were not asked for—that the tax was applied automatically at fifteen per cent, and that confirming
+an order creates neither a delivery nor an invoice. And it ends by saying how it checked: *I
+verified the record by re-reading it after confirmation.*
+
+That last sentence is the difference between an assistant and a form. A form tells you what it
+saved. A colleague tells you what they did and how they know it worked.
+
 ---
 
 ## A short history of the quotation
