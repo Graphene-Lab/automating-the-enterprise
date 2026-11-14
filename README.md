@@ -1,0 +1,122 @@
+# Automating the Enterprise with AI and Odoo
+
+**The 'easy' business that runs itself, thanks to artificial intelligence.**
+
+A free book (PDF and ePub) about putting a real ERP — Odoo Community, the free and open-source one
+— and a real AI assistant (AgentBridge) to work in a small company, told as a story and documented
+with screenshots taken from a live installation.
+
+[![Download PDF](https://img.shields.io/badge/Download-PDF-b31b1b?logo=adobeacrobatreader&logoColor=white)](https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download/automating-the-enterprise-EN.pdf)
+[![Download ePub](https://img.shields.io/badge/Download-ePub-2ea44f?logo=bookstack&logoColor=white)](https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download/automating-the-enterprise-EN.epub)
+[![License](https://img.shields.io/badge/license-free%20to%20read%20and%20share-blue)](LICENSE.md)
+
+---
+
+## Download the book
+
+| Format | Direct download | Best for |
+|---|---|---|
+| **PDF** (A5, 300+ pages, colour figures) | **[automating-the-enterprise-EN.pdf](https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download/automating-the-enterprise-EN.pdf)** | reading on a computer or tablet, printing |
+| **ePub** (reflowable, cover included) | **[automating-the-enterprise-EN.epub](https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download/automating-the-enterprise-EN.epub)** | Kindle, Kobo, Apple Books, phones |
+| **Print interior** (6×9, cover separate) | [automating-the-enterprise-EN-print.pdf](https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download/automating-the-enterprise-EN-print.pdf) | print-on-demand services |
+
+Those links point at the release assets, so the browser starts the download immediately instead of
+opening a GitHub page.
+
+## What this book is about
+
+Most small and medium businesses already own an ERP and do not know it: the accounting program, the
+stock spreadsheet, the shared folder with seventeen price lists in it. What they do not have is one
+place where the customer, the product, the order, the stock, the invoice and the ledger are the
+same fact seen from different sides.
+
+This book shows how to get that place, for free, and then how to put an AI assistant inside it so
+that the work of *finding out what is true* stops being a job.
+
+It is written for the person who runs the office, not for a programmer:
+
+- **No code, no SQL, no command line.** Every operation is described in plain English, and performed
+  by typing an instruction in ordinary language.
+- **Everything was executed.** Every screenshot comes from a real installation: the installer, the
+  ERP, the assistant, the invoices, the stock moves, the refusals.
+- **The failures are in the book too.** Slow downloads, a database that would not install, a
+  question answered with the wrong definition — each one is described with what it taught.
+
+## What you will find inside
+
+**Part I — The Weight of the Paper.** Why paper survived the paperless office, what an ERP really
+is, and the six-hundred-year-old rule (double-entry bookkeeping, codified by Luca Pacioli in 1494)
+that still governs every invoice you will ever post.
+
+**Part II — The Installation.** Odoo Community 20, PostgreSQL and AgentBridge installed by one
+script, screen by screen, with the questions it asks and what it does while you wait. Then the
+company's own configuration: currency, taxes, chart of accounts, products, warehouse, users, API
+key.
+
+**Part III — The Assistant at Work.** A real office simulation, operation by operation: customers,
+quotations, confirmed orders, invoices, payments, deliveries, stock adjustments, purchase orders,
+supplier bills, month-end. For each one, the instruction that was typed and the page of the ERP
+that shows the result.
+
+**Part IV — The Prompts.** More than fifty instructions that were executed and verified, grouped by
+department: sales, purchasing, warehouse, invoicing, accounting, reporting, housekeeping, standing
+work.
+
+**Part V — The Meaning.** What changes in the office when the machine takes the patience, what the
+machine cannot do (and must never be allowed to do), and the arithmetic of not doing it.
+
+Plus a glossary for people who do not program, a troubleshooting appendix built from the failures
+that actually happened, and the legal note about trademarks.
+
+## Who it is for
+
+- Owners and managers of small and medium businesses who want the facts of their company in one
+  place, without a six-figure project.
+- Office managers, bookkeepers and operations leads who are tired of being the database.
+- Consultants and IT people who need to explain, to a non-technical audience, what an ERP plus an
+  agent actually does.
+- Anyone curious about how AI agents are wired safely into real business software: the assistant
+  acts as an ERP *user*, so the ERP's own permissions, record rules and audit trail still apply.
+
+## The stack the book uses
+
+| Part | What it is | Licence |
+|---|---|---|
+| [Odoo Community 20](https://github.com/odoo/odoo) | the ERP: model, documents, ledger, web interface | LGPL-3.0 |
+| [PostgreSQL 16](https://www.postgresql.org/) | the database: the company's memory | PostgreSQL License |
+| [AgentBridge](https://github.com/Graphene-Lab/AgentBridge) | the assistant: natural language, tools, scheduled work | see repository |
+| [OdooTool](https://github.com/Graphene-Lab/OdooTool) | the connector: typed calls to Odoo's JSON-2 API | AGPL-3.0 |
+
+One script installs all of it on Windows or Linux; the book walks through that script and then
+through a month of office work performed with it.
+
+## Keywords
+
+AI for ERP · Odoo AI assistant · Odoo automation · open source ERP · free ERP · Odoo Community ·
+business process automation · AI agent for business · LLM tools · MCP (Model Context Protocol) ·
+self-hosted AI · private AI · small business automation · invoice automation · inventory automation ·
+accounting automation · AgentBridge · OdooTool · digital transformation for SMEs · office automation
+without programming.
+
+## Build the book yourself
+
+The sources are DistroBook markdown, one file per chapter, and the order is taken from
+`books/EN/README.md`:
+
+```bash
+dotnet run --project ../DistroBook/src/DistroBook.Cli -c Release -- prepare --book . --langs EN
+```
+
+Outputs land in `publish/`: the reader PDF, the ePub, the print interior and the generated covers.
+
+## Licence and trademarks
+
+The text of the book is free to read and share. **Odoo** is a registered trademark of Odoo S.A.;
+this book is an independent work and is not affiliated with, endorsed by or sponsored by Odoo S.A.
+See [Appendix E](books/EN/appendix-e-trademarks-and-legal-notes.md) for the full note.
+
+## Get in touch
+
+Questions, corrections and reports of things that did not work are welcome in the
+[issues](https://github.com/Graphene-Lab/automating-the-enterprise/issues). The book itself ends
+with a QR code that leads to the same conversation.

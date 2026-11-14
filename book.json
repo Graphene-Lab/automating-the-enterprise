@@ -1,0 +1,17 @@
+{
+  "slug": "automating-the-enterprise",
+  "clean_cover": "assets/book-cover.png",
+  "cover_size": { "width": 1024, "height": 1536 },
+  "publisher": "Graphene Lab",
+  "year": "2026",
+  "languages": {
+    "EN": {
+      "title": "Automating the Enterprise with AI and Odoo",
+      "subtitle": "The 'easy' business that runs itself, thanks to artificial intelligence",
+      "author": "Andrea Bruno",
+      "color": "#0B1F33",
+      "genre": "Business / Artificial Intelligence",
+      "isbn": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+flowchart TD
+    P[Party: customer or supplier] --> D[Document: order, delivery, invoice]
+    R[Product: variants and units] --> D
+    D --> L[Ledger: two-sided entries]
+    L --> M[Money: who owes whom]
+    D --> S[Stock: what is on the shelf]

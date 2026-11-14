@@ -1,0 +1,18 @@
+# Prompt files used to generate the book with an AI, and the working material around them.
+prompt.txt
+prompt-*.txt
+prompt-*.md
+_work/
+
+# Build output: the release carries the PDF and the ePub, not the repository.
+publish/
+
+# DistroBook working folders and logs
+.mermaid-tmp/
+*.log
+
+# Editor and OS noise
+.vs/
+.vscode/
+Thumbs.db
+desktop.ini
