@@ -80,7 +80,7 @@ Every document that has a financial consequence produces journal entries: the tw
 
 Nobody at Riverton would ever type a journal entry by hand, and that is the point. The entries are a by-product of the documents. The accountant's job stops being "record what happened" and becomes "check that what was recorded is right," which is a much better use of an accountant.
 
-![Four kinds of thing, and every ERP is a consequence of them](../../assets/diagrams/ch05-four-nouns.svg)
+![Four kinds of thing, and every ERP is a consequence of them](../../assets/diagrams/ch05-four-nouns.DE.svg)
 
 ---
 

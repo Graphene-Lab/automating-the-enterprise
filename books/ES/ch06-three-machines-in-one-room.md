@@ -52,7 +52,7 @@ El agente no tiene una llave maestra. Se conecta a Odoo como un *usuario*—una 
 
 Este es la decisión arquitectónica más importante del sistema entero, y es la razón por la que el libro puede recomendarlo a una empresa que nunca ha usado inteligencia artificial antes. La inteligencia es nueva y ligeramente impredecible; las reglas son viejas y completamente impredecibles. La cosa nueva solo está permitida a actuar dentro de las reglas de la cosa vieja.
 
-![Las tres máquinas, y el bucle que mantiene verdadero al modelo](../../assets/diagrams/ch06-three-machines.svg)
+![Las tres máquinas, y el bucle que mantiene verdadero al modelo](../../assets/diagrams/ch06-three-machines.ES.svg)
 
 ## Por qué tres y no uno
 

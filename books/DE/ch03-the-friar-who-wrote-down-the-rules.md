@@ -24,7 +24,7 @@ Die Folge ist ein sich selbst prüfendes System. Addiere jede Soll-Einträge in 
 
 Gerald zeichnete es auf die Rückseite eines Umschlags, so wurde die Buchführung seit 1494 unterrichtet.
 
-![Ein Vorgang, zwei Seiten: die Symmetrie, die Pacioli 1494 veröffentlichte](../../assets/diagrams/ch03-double-entry.svg)
+![Ein Vorgang, zwei Seiten: die Symmetrie, die Pacioli 1494 veröffentlichte](../../assets/diagrams/ch03-double-entry.DE.svg)
 
 "Nun," sagte Gerald und legte den Stift nieder, "hier ist es, was dein Vater nie verstand, und was die meisten Menschen nie verstehen. Die Doppelte Buchführung ist keine Regel, die erfunden wurde, um dein Leben schwierig zu machen. Sie ist eine *Beschreibung der Realität*. Es gibt zwei Seiten zu jeder Transaktion, weil es zwei Parteien zu jeder Transaktion gibt. Die Bücher sind kein Steuerformular. Sie sind ein Modell von dem, was tatsächlich passiert ist."
 

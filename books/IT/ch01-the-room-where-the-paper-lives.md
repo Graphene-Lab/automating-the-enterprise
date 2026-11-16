@@ -52,7 +52,7 @@ Moltiplica questo per cinquantadue settimane e per ogni dipartimento, e arrivera
 
 C'è un diagramma che rende questo visibile, ed vale la pena guardarlo per un momento, perché è la mappa del problema di cui tratta questo libro.
 
-![Il percorso di un documento attraverso un ufficio che non ha un modello della compagnia](../../assets/diagrams/ch01-paper-path.svg)
+![Il percorso di un documento attraverso un ufficio che non ha un modello della compagnia](../../assets/diagrams/ch01-paper-path.IT.svg)
 
 Sei passi, e ad ogni freccia un fatto viene copiato da una persona da un mezzo a un altro. Ogni copia è una possibilità di introdurre un errore, e ogni errore costa più da trovare di quanto costi produrlo. La fattura che non viaggiò non era un'anomalia. Era il comportamento normale di un sistema la cui memoria è distribuita tra vasi, teste e cassetti, senza un unico luogo dove la verità viene tenuta.
 

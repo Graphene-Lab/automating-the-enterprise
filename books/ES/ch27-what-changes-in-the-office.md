@@ -52,7 +52,7 @@ Hay tres cosas que impiden esto, y no son técnicas.
 
 **La tercera es que se debe darle a la máquina un nombre y un límite.** No una personalidad—un nombre en el sentido de una responsabilidad. Alguien debe ser responsable de lo que hace el asistente, debe leer su registro, debe ser permitido para apagarlo. Un asistente que nadie posee es un asistente que nadie comprueba, y un asistente que nadie comprueba es un rumor con un teclado.
 
-![Lo que la máquina toma, y lo que la persona conserva](../../assets/diagrams/ch27-job-change.svg)
+![Lo que la máquina toma, y lo que la persona conserva](../../assets/diagrams/ch27-job-change.ES.svg)
 
 ## La nueva descripción del trabajo
 

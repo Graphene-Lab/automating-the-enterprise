@@ -52,7 +52,7 @@ Multiplica eso por cincuenta y dos semanas y por cada departamento, y llegarás 
 
 Hay un diagrama que hace esto visible, y vale la pena mirarlo por un momento, porque es el mapa del problema del que trata este libro.
 
-![La ruta de un documento a través de una oficina que no tiene modelo de la empresa](../../assets/diagrams/ch01-paper-path.svg)
+![La ruta de un documento a través de una oficina que no tiene modelo de la empresa](../../assets/diagrams/ch01-paper-path.ES.svg)
 
 Seis pasos, y en cada flecha un dato es copiado por una persona de un medio a otro. Cada copia es una oportunidad para introducir un error, y cada error cuesta más encontrarlo de lo que costó hacerlo. La factura que nunca viajó no era una anomalía. Era el comportamiento normal de un sistema cuya memoria está distribuida entre bandejas, cabezas y cajones, sin un solo lugar donde se guarde la verdad.
 

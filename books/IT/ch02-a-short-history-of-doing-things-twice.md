@@ -176,7 +176,7 @@ promessa trasforma un mucchio di carta in un modello della compagnia.
 
 E un modello, una volta esistente, può essere *agito* da qualcosa d'altro che un uomo.
 
-![Sette invenzioni, un'ambizione: smettere di scrivere lo stesso fatto due volte](../../assets/diagrams/ch02-timeline.svg)
+![Sette invenzioni, un'ambizione: smettere di scrivere lo stesso fatto due volte](../../assets/diagrams/ch02-timeline.IT.svg)
 
 ---
 

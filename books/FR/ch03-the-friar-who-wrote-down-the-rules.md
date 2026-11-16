@@ -24,7 +24,7 @@ La conséquence est un système auto-vérifiant. Additionnez chaque débit dans 
 
 Gerald le dessina au verso d'une enveloppe, ce par quoi la comptabilité est enseignée depuis 1494.
 
-![Un événement, deux côtés : la symétrie que Pacioli publia en 1494](../../assets/diagrams/ch03-double-entry.svg)
+![Un événement, deux côtés : la symétrie que Pacioli publia en 1494](../../assets/diagrams/ch03-double-entry.FR.svg)
 
 « Maintenant », dit Gerald en posant la plume, « voici ce que votre père n'a jamais compris, et ce que la plupart des gens ne comprennent jamais. L'écriture en partie double n'est pas une règle inventée pour rendre votre vie difficile. C'est une *description de la réalité*. Il y a deux côtés à chaque opération parce qu'il y a deux parties à chaque opération. Les comptes ne sont pas un formulaire de taxe. Ce sont un modèle de ce qui s'est réellement passé. »
 

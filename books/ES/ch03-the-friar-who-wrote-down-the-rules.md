@@ -24,7 +24,7 @@ La consecuencia es un sistema que se verifica a sí mismo. Suma cada débito en 
 
 Gerald lo dibujó en el reverso de un sobre, que es así como se ha enseñado la contabilidad desde 1494.
 
-![Un evento, dos lados: la simetría que Pacioli publicó en 1494](../../assets/diagrams/ch03-double-entry.svg)
+![Un evento, dos lados: la simetría que Pacioli publicó en 1494](../../assets/diagrams/ch03-double-entry.ES.svg)
 
 "Ahora," dijo Gerald, dejando la pluma, "aquí está lo que tu padre nunca entendió, y lo que la mayoría de la gente nunca entiende. La partida doble no es una regla inventada para hacer tu vida difícil. Es una *descripción de la realidad*. Hay dos lados en cada transacción porque hay dos partes en cada transacción. Los libros no son un formulario de impuestos. Son un modelo de lo que realmente ocurrió."
 

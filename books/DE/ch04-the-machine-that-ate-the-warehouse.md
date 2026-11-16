@@ -82,7 +82,7 @@ Ein ERP ist ein Modell eines Unternehmens, und ein Modell hat Regeln. Man kann k
 
 Vervielfältige diesen Streit mit jedem Prozess im Unternehmen, und du hast den Grund, warum ERP-Projekte dafür berühmt sind, schiefzugehen. Die Software ist normalerweise nicht das Problem. Das Problem ist, dass die Installation eines ERP kein IT-Projekt ist: es ist eine Absprache darüber, wie das Unternehmen funktioniert, den Köpfen der Menschen, die dort arbeiten, entzogen, aufgeschrieben, und dann von einer Maschine erzwungen. Unternehmen, die dieses Gespräch nicht führen können—weil der Inhaber es nicht will, oder die Abteilungen sich nicht einigen, oder der Berater stundenweise bezahlt wird und sich nichts draus macht—enden mit einem teuren System, das niemand vertraut, und sie kehren zu den Fächern zurück.
 
-![Die Schleife, die jedes ERP wahr hält, vom Auftrag zum Hauptbuch und zurück](../../assets/diagrams/ch04-business-loop.svg)
+![Die Schleife, die jedes ERP wahr hält, vom Auftrag zum Hauptbuch und zurück](../../assets/diagrams/ch04-business-loop.DE.svg)
 
 Diese Schleife ist das Ganze eines Fertigungsunternehmens, und das Ganze eines Großhandelsunternehmens ebenfalls, mit „Produktion" ersetzt durch „Kommissionieren." Jedes ERP der Welt ist eine Maschine zum Wahrhalten dieser Schleife.
 

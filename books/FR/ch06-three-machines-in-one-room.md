@@ -52,7 +52,7 @@ L'agent n'a pas de clé maîtresse. Il se connecte à Odoo en tant que *utilisat
 
 C'est la décision architecturale la plus importante de tout le système, et c'est la raison pour laquelle le livre peut le recommander à une compagnie qui n'a jamais utilisé l'intelligence artificielle auparavant. L'intelligence est nouvelle et légèrement imprévisible ; les règles sont anciennes et complètement imprévisibles. La chose nouvelle n'est autorisée à agir qu'à l'intérieur des règles de la chose ancienne.
 
-![Les trois machines, et la boucle qui garde le modèle vrai](../../assets/diagrams/ch06-three-machines.svg)
+![Les trois machines, et la boucle qui garde le modèle vrai](../../assets/diagrams/ch06-three-machines.FR.svg)
 
 ## Pourquoi trois et pas une
 

@@ -1,0 +1,6 @@
+flowchart TD
+    P[Partie : client ou fournisseur] --> D[Document : commande, livraison, facture]
+    R[Produit : variantes et unités] --> D
+    D --> L[Grand livre : écritures doubles]
+    L --> M[Argent : qui doit à qui]
+    D --> S[Stock : ce qui est en rayon]

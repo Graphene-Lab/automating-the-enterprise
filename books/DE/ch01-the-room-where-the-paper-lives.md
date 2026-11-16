@@ -52,7 +52,7 @@ Multiplizieren Sie das mit fünfzig zwei Wochen und mit jedem Fach, und Sie gela
 
 Es gibt ein Diagramm, das dies sichtbar macht, und es ist wert, einen Moment lang angesehen zu werden, denn es ist die Karte des Problems, um das dieses Buch kreist.
 
-![Der Weg eines Dokumentes durch ein Büro ohne Modell des Unternehmens](../../assets/diagrams/ch01-paper-path.svg)
+![Der Weg eines Dokumentes durch ein Büro ohne Modell des Unternehmens](../../assets/diagrams/ch01-paper-path.DE.svg)
 
 Sechs Schritte, und an jedem Pfeil wird ein Fakt von einer Person von einem Medium in ein anderes kopiert. Jede Kopie ist eine Gelegenheit, einen Fehler einzuführen, und jeder Fehler kostet mehr, ihn zu finden, als er kostete, ihn zu machen. Die Rechnung, die nie reiste, war keine Anomalie. Sie war das normale Verhalten eines Systems, dessen Gedächtnis über Fächer, Köpfe und Schubladen verteilt ist, mit keinem einzelnen Ort, an dem die Wahrheit verwahrt wird.
 

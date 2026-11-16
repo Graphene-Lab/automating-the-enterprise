@@ -80,7 +80,7 @@ Todo documento que tiene una consecuencia financiera produce asientos contables:
 
 Nadie en Riverton escribiría nunca un asiento contable a mano, y ese es el punto. Los asientos son un subproducto de los documentos. El trabajo del contable deja de ser "registrar lo que ocurrió" y se convierte en "comprobar que lo registrado es correcto", lo cual es un uso mucho mejor de un contable.
 
-![Cuatro clases de cosa, y todo ERP es una consecuencia de ellas](../../assets/diagrams/ch05-four-nouns.svg)
+![Cuatro clases de cosa, y todo ERP es una consecuencia de ellas](../../assets/diagrams/ch05-four-nouns.ES.svg)
 
 ---
 

@@ -52,7 +52,7 @@ Multipliez cela par cinquante-deux semaines et par chaque service, et vous arriv
 
 Il existe un diagramme qui rend cela visible, et il vaut la peine de le regarder un instant, car c'est la carte du problème dont ce livre traite.
 
-![Le chemin d'un document à travers un bureau qui n'a pas de modèle de l'entreprise](../../assets/diagrams/ch01-paper-path.svg)
+![Le chemin d'un document à travers un bureau qui n'a pas de modèle de l'entreprise](../../assets/diagrams/ch01-paper-path.FR.svg)
 
 Six étapes, et à chaque flèche un fait est copié par une personne d'un média dans un autre. Chaque copie est une chance d'introduire une erreur, et chaque erreur coûte plus cher à trouver qu'elle n'a coûté à produire. La facture qui n'a jamais voyagé n'était pas une anomalie. C'était le comportement normal d'un système dont la mémoire est répartie entre plateaux, têtes et tiroirs, sans endroit unique où la vérité est conservée.
 

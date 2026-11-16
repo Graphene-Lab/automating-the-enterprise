@@ -72,7 +72,7 @@ Un ERP est, au fond, une promesse : que l'adresse sera écrite une fois, en un s
 
 Et un modèle, une fois qu'il existe, peut être *agis sur* par quelque chose d'autre qu'une personne.
 
-![Sept inventions, une ambition : cesser d'écrire le même fait deux fois](../../assets/diagrams/ch02-timeline.svg)
+![Sept inventions, une ambition : cesser d'écrire le même fait deux fois](../../assets/diagrams/ch02-timeline.FR.svg)
 
 ---
 

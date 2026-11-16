@@ -52,7 +52,7 @@ Der Agent hat keinen Master-Schlüssel. Er verbindet sich mit Odoo als *Benutzer
 
 Dies ist die einzelne wichtigste architektonische Entscheidung im ganzen System, und es ist der Grund, warum das Buch es einem Unternehmen empfehlen kann, das noch nie künstliche Intelligenz verwendet hat. Die Intelligenz ist neu und leicht unvorhersehbar; die Regeln sind alt und vollständig vorhersehbar. Das Neue darf nur innerhalb der Regeln des Alten handeln.
 
-![Die drei Maschinen und die Schleife, die das Modell wahr hält](../../assets/diagrams/ch06-three-machines.svg)
+![Die drei Maschinen und die Schleife, die das Modell wahr hält](../../assets/diagrams/ch06-three-machines.DE.svg)
 
 ## Warum drei und nicht eins
 

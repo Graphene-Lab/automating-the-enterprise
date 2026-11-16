@@ -52,7 +52,7 @@ Ci sono tre cose che impediscono questo, e non sono tecniche.
 
 **La terza è che la macchina deve ricevere un nome e un limite.** Non una personalità—un nome nel senso di una responsabilità. Qualcuno deve essere responsabile di ciò che l'assistente fa, deve leggere il suo log, deve essere autorizzato a spegnerla. Un'assistente che nessuno possiede è un'assistente che nessuno verifica, e un'assistente che nessuno verifica è un pettegolezzo con una tastiera.
 
-![Cosa prende la macchina, e cosa resta alla persona](../../assets/diagrams/ch27-job-change.svg)
+![Cosa prende la macchina, e cosa resta alla persona](../../assets/diagrams/ch27-job-change.IT.svg)
 
 ## La nuova descrizione del lavoro
 

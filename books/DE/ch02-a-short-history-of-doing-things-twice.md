@@ -72,7 +72,7 @@ Ein ERP ist im Kern ein Versprechen: dass die Adresse einmal niedergschrieben wi
 
 Und ein Modell, sobald es existiert, kann *behandelt werden* von etwas anderem als einer Person.
 
-![Sieben Eraltungen, eine Ambition: aufhören, dieselbe Tatsache doppelt zu schreiben](../../assets/diagrams/ch02-timeline.svg)
+![Sieben Eraltungen, eine Ambition: aufhören, dieselbe Tatsache doppelt zu schreiben](../../assets/diagrams/ch02-timeline.DE.svg)
 
 ---
 

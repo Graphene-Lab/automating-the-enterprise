@@ -80,7 +80,7 @@ Chaque document qui a une conséquence financière produit des écritures de jou
 
 Personne à Riverton n'écrirait jamais une écriture de journal à la main, et c'est le point. Les écritures sont un sous-produit des documents. Le travail du comptable cesse d'être « enregistrer ce qui s'est passé » et devient « vérifier que ce qui a été enregistré est correct », ce qui est un usage bien meilleur d'un comptable.
 
-![Quatre sortes de choses, et chaque ERP est une conséquence d'elles](../../assets/diagrams/ch05-four-nouns.svg)
+![Quatre sortes de choses, et chaque ERP est une conséquence d'elles](../../assets/diagrams/ch05-four-nouns.FR.svg)
 
 ---
 

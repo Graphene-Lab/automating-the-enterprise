@@ -52,7 +52,7 @@ Es gibt drei Dinge, die dies verhindern, und sie sind nicht technisch.
 
 **Das dritte ist, dass der Maschine ein Name und ein Limit gegeben werden muss.** Nicht eine Persönlichkeit—ein Name im Sinne einer Verantwortung. Jemand muss für das verantwortlich sein, was der Assistent tut, muss sein Protokoll lesen, muss erlaubt sein, ihn auszuschalten. Ein Assistent, den niemand besitzt, ist ein Assistent, den niemand prüft, und ein Assistent, den niemand prüft, ist ein Gerücht mit einer Tastatur.
 
-![Was die Maschine nimmt, und was der Mensch behält](../../assets/diagrams/ch27-job-change.svg)
+![Was die Maschine nimmt, und was der Mensch behält](../../assets/diagrams/ch27-job-change.DE.svg)
 
 ## Die neue Stellenbeschreibung
 

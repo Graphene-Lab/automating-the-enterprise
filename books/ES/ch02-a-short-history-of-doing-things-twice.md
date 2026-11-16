@@ -72,7 +72,7 @@ Un ERP es, en su corazón, una promesa: que la dirección se escribirá una sola
 
 Y un modelo, una vez que existe, puede ser *accionado* por algo distinto de una persona.
 
-![Siete invenciones, una ambición: dejar de escribir el mismo dato dos veces](../../assets/diagrams/ch02-timeline.svg)
+![Siete invenciones, una ambición: dejar de escribir el mismo dato dos veces](../../assets/diagrams/ch02-timeline.ES.svg)
 
 ---
 

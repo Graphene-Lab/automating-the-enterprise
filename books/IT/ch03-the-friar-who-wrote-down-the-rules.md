@@ -24,7 +24,7 @@ La conseguenza è un sistema che si autoverifica. Si sommano tutti gli addebiti 
 
 Gerald lo disegnò sul retro di una busta, che è così che la contabilità viene insegnata dal 1494.
 
-![Un evento, due lati: la simmetria che Pacioli pubblicò nel 1494](../../assets/diagrams/ch03-double-entry.svg)
+![Un evento, due lati: la simmetria che Pacioli pubblicò nel 1494](../../assets/diagrams/ch03-double-entry.IT.svg)
 
 "Ora," disse Gerald, posando la penna, "ecco cosa tuo padre non ha mai capito, e cosa la maggior parte delle persone non capisce mai. La partita doppia non è una regola inventata per renderti la vita difficile. È una *descrizione della realtà*. Ci sono due lati in ogni operazione perché ci sono due parti in ogni operazione. I libri non sono un modulo fiscale. Sono un modello di ciò che è realmente accaduto."
 

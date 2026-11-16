@@ -1,0 +1,5 @@
+flowchart LR
+    A[Un evento: 1000 pagado] --> B[Banco: -1000]
+    A --> C[Proveedor debe menos: -1000]
+    B --> D{Los débitos son iguales a los créditos?}
+    C --> D

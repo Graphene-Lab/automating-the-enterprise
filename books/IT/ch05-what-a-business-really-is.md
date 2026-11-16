@@ -80,7 +80,7 @@ Ogni documento che ha una conseguenza finanziaria produce scritture di registro:
 
 Nessuno a Riverton digiterebbe mai una scrittura di registro a mano, e questo è il punto. Le scritture sono un sottoprodotto dei documenti. Il lavoro del contabile cessa di essere "registrare ciò che è successo" e diventa "verificare che ciò che è stato registrato sia giusto," che è un uso molto migliore di un contabile.
 
-![Quattro tipi di cosa, e ogni ERP è una loro conseguenza](../../assets/diagrams/ch05-four-nouns.svg)
+![Quattro tipi di cosa, e ogni ERP è una loro conseguenza](../../assets/diagrams/ch05-four-nouns.IT.svg)
 
 ---
 

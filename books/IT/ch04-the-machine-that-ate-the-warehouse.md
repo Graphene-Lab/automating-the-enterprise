@@ -82,7 +82,7 @@ Un ERP è un modello di un'azienda, e un modello ha regole. Non puoi pubblicare 
 
 Moltiplica quella discussione per ogni processo nell'azienda, e hai il motivo per cui i progetti ERP sono famosi per andare sbagliati. Il software di solito non è il problema. Il problema è che installare un ERP non è un progetto IT: è un accordo su come funziona l'azienda, estratto dalle teste delle persone che lavorano lì, scritto, e poi fatto rispettare da una macchina. Le aziende che non possono avere quella conversazione—perché il proprietario non vuole, o i reparti non concordano, o il consulente è pagato a ore e non gli importa—finiscono con un sistema costoso che nessuno si fida, e tornano ai vassoi.
 
-![Il giro che ogni ERP mantiene vero, dall'ordine alla contabilità e ritorno](../../assets/diagrams/ch04-business-loop.svg)
+![Il giro che ogni ERP mantiene vero, dall'ordine alla contabilità e ritorno](../../assets/diagrams/ch04-business-loop.IT.svg)
 
 Quello giro è tutto di un'azienda manifatturiera, e tutto di un'azienda grossista pure, con "produzione" sostituita da "prelievo". Ogni ERP nel mondo è una macchina per mantenere vero quel giro.
 

@@ -1,0 +1,6 @@
+flowchart TD
+    P[Partei: Kunde oder Lieferant] --> D[Dokument: Bestellung, Lieferung, Rechnung]
+    R[Produkt: Varianten und Einheiten] --> D
+    D --> L[Buchbuch: doppelte Buchungen]
+    L --> M[Geld: wer schuldet wem]
+    D --> S[Lager: was liegt auf dem Regal]

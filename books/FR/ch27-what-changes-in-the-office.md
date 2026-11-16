@@ -52,7 +52,7 @@ Il y a trois choses qui empêchent ceci, et ce ne sont pas des choses techniques
 
 **La troisième est que la machine doit recevoir un nom et une limite.** Pas une personnalité—un nom au sens d'une responsabilité. Quelqu'un doit être responsable de ce que l'assistant fait, doit lire son journal, doit être autorisé à l'éteindre. Un assistant que personne ne possède est un assistant que personne ne vérifie, et un assistant que personne ne vérifie est un bruit de clavier.
 
-![Ce que la machine prend, et ce que la personne garde](../../assets/diagrams/ch27-job-change.svg)
+![Ce que la machine prend, et ce que la personne garde](../../assets/diagrams/ch27-job-change.FR.svg)
 
 ## La nouvelle description de travail
 

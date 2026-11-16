@@ -1,0 +1,6 @@
+flowchart TD
+    P[Parte: cliente o proveedor] --> D[Documento: pedido, entrega, factura]
+    R[Producto: variantes y unidades] --> D
+    D --> L[Libro: entradas de doble cuenta]
+    L --> M[Dinero: a quién debe quién]
+    D --> S[Inventario: qué hay en el estante]
