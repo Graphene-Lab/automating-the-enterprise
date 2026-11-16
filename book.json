@@ -4,6 +4,9 @@
   "cover_size": { "width": 1024, "height": 1536 },
   "publisher": "Graphene Lab",
   "year": "2026",
+  "downloads": {
+    "base_url": "https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download"
+  },
   "languages": {
     "EN": {
       "title": "Automating the Enterprise with AI and Odoo",
