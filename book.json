@@ -12,6 +12,46 @@
       "color": "#0B1F33",
       "genre": "Business / Artificial Intelligence",
       "isbn": ""
+    },
+    "IT": {
+      "title": "Automazione dell'Impresa con AI e Odoo",
+      "subtitle": "Il business 'facile' che si auto-gestisce, grazie all'intelligenza artificiale",
+      "author": "Andrea Bruno",
+      "color": "#0B1F33",
+      "genre": "Business / Intelligenza Artificiale",
+      "isbn": ""
+    },
+    "FR": {
+      "title": "Automatiser l'Entreprise avec l'IA et Odoo",
+      "subtitle": "L'affaire 'facile' qui se gère elle-même, grâce à l'intelligence artificiale",
+      "author": "Andrea Bruno",
+      "color": "#0B1F33",
+      "genre": "Affaires / Intelligence Artificiale",
+      "isbn": ""
+    },
+    "ES": {
+      "title": "Automatizando la Empresa con IA y Odoo",
+      "subtitle": "Los negocios 'fáciles' que se gestionan solos, gracias a la inteligencia artificial",
+      "author": "Andrea Bruno",
+      "color": "#0B1F33",
+      "genre": "Negocios / Inteligencia Artificial",
+      "isbn": ""
+    },
+    "DE": {
+      "title": "Unternehmensautomatisierung mit KI und Odoo",
+      "subtitle": "Das 'leichte' Geschäft, das sich von selbst erledigt, dank künstlicher Intelligenz",
+      "author": "Andrea Bruno",
+      "color": "#0B1F33",
+      "genre": "Business / Künstliche Intelligenz",
+      "isbn": ""
+    },
+    "RU": {
+      "title": "Автоматизация предприятия с помощью ИИ и Odoo",
+      "subtitle": "'Лёгкий' бизнес, который управляет собой сам, благодаря искусственному интеллекту",
+      "author": "Андреа Бруно",
+      "color": "#0B1F33",
+      "genre": "Бизнес / Искусственный интеллект",
+      "isbn": ""
     }
   }
 }
