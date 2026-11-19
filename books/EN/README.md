@@ -5,6 +5,12 @@
 This file is the build order: DistroBook reads the `[Title](file.md)` links below from top to
 bottom and assembles the book in exactly this sequence.
 
+**Want to install first?** The installation instructions begin with **Part II — The Installation**
+(chapters 7 to 12). If you would rather follow a plain checklist with the book closed, the same
+procedure is in **Appendix A — Installing the Stack, Step by Step**, at the back. Everything before
+Part II explains why the system is built the way it is, and none of it is required before you
+install anything.
+
 ## Before the story
 - [Preface: Who This Book Is For](preface-who-this-book-is-for.md)
 

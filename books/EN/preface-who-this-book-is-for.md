@@ -56,6 +56,13 @@ you are—read Part II first, install the thing on a spare computer, and come ba
 the screens in front of you. That is how the book was written, and it is a perfectly good way to
 read it.
 
+If your purpose is simply to get the system installed, the instructions begin in **Part II — The
+Installation**. Chapters seven through twelve take you through the whole install, screen by screen,
+on a real machine, with the real messages. If you would prefer a plain list to follow with the book
+closed, the very same procedure is written out in **Appendix A — Installing the Stack, Step by
+Step**. The chapters before Part II explain why the system is built the way it is; they are there
+to make the result sensible, but none of them is a prerequisite for installing anything.
+
 The appendices are reference. Appendix A is the installation as a checklist, without the story.
 Appendix B is a glossary. Appendix C is what to do when something goes wrong. Appendix D is the
 library of prompts, grouped by department. Appendix E is the legal note about trademarks.
