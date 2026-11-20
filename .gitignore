@@ -4,8 +4,8 @@ prompt-*.txt
 prompt-*.md
 _work/
 
-# Build output: the release carries the PDF and the ePub, not the repository.
-publish/
+# Build output lives in publish/ and IS committed: the README links to the files there, so a
+# reader downloads the book from the repository itself, without a release duplicating it.
 
 # DistroBook working folders and logs
 .mermaid-tmp/

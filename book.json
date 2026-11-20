@@ -1,11 +1,11 @@
-{
+﻿{
   "slug": "automating-the-enterprise",
   "clean_cover": "assets/book-cover.png",
   "cover_size": { "width": 1024, "height": 1536 },
   "publisher": "Graphene Lab",
   "year": "2026",
   "downloads": {
-    "base_url": "https://github.com/Graphene-Lab/automating-the-enterprise/releases/latest/download"
+    "base_url": "https://github.com/Graphene-Lab/automating-the-enterprise/raw/main/publish"
   },
   "languages": {
     "EN": {
