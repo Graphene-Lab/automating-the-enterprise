@@ -1,0 +1,82 @@
+name: Release the books
+
+# The books live in publish/ and are tracked: the README links straight at those files, so a reader
+# downloads the book from the repository without cloning anything. A release is the dated archive of
+# a build — the same PDFs, ePubs and print interiors, attached so they can be fetched with one click.
+#
+# It runs when the built books change, not on every commit: a change under publish/ is by definition
+# a new build. The tag carries the day and the commit, so two builds in one day never collide and a
+# release always names the commit that produced it.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'publish/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-books
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the commit that carries the books
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Work out the tag
+        id: tag
+        run: |
+          echo "tag=books-$(date -u +%Y.%m.%d)-${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+          echo "day=$(date -u +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Check that the books are there
+        run: |
+          count=$(ls -1 publish/*.pdf publish/*.epub 2>/dev/null | wc -l)
+          echo "$count book files found in publish/"
+          test "$count" -ge 12 || { echo "expected six PDFs and six ePubs"; exit 1; }
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="${{ steps.tag.outputs.tag }}"
+          day="${{ steps.tag.outputs.day }}"
+          short="${GITHUB_SHA::7}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "release $tag already exists: nothing to publish"
+            exit 0
+          fi
+
+          # The notes go through sed because the heredoc lives inside an indented YAML block: without
+          # stripping those spaces, every line would be read as a code block instead of markdown.
+          sed -e 's/^          //' > notes.md <<'NOTES'
+          The six editions built from the sources in `books/` at commit SHORT_SHA: the reader PDFs, the ePubs and the print interiors.
+
+          The same files are in `publish/` in the repository, and the download table in the README links to them directly. This release is the dated archive of that build, so it is clear which sources produced which books.
+
+          | Language | PDF | ePub |
+          |---|---|---|
+          | English | `automating-the-enterprise-EN.pdf` | `automating-the-enterprise-EN.epub` |
+          | Italiano | `automating-the-enterprise-IT.pdf` | `automating-the-enterprise-IT.epub` |
+          | Français | `automating-the-enterprise-FR.pdf` | `automating-the-enterprise-FR.epub` |
+          | Español | `automating-the-enterprise-ES.pdf` | `automating-the-enterprise-ES.epub` |
+          | Deutsch | `automating-the-enterprise-DE.pdf` | `automating-the-enterprise-DE.epub` |
+          | Русский | `automating-the-enterprise-RU.pdf` | `automating-the-enterprise-RU.epub` |
+
+          `*-print.pdf` are the print interiors, for a print shop.
+          NOTES
+          sed -i "s/SHORT_SHA/$short/" notes.md
+
+          gh release create "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Books of $day ($short)" \
+            --notes-file notes.md \
+            publish/*.pdf publish/*.epub publish/print/*.pdf
