@@ -38,6 +38,68 @@ Bevor irgendetwas anderes, eine Gewohnheit. Wenn etwas schiefgeht, installieren 
 
 ---
 
+## Die Seite, die sich öffnet, ist nicht die Anmeldeseite
+
+**Was Sie sehen.** Sie doppelklicken auf **AI Odoo**, oder öffnen `http://localhost:8069`, und der
+Browser zeigt etwas anderes als die weiße Anmeldekarte: eine Seite über Odoo, eine Website mit einem
+Platzhalter-Logo, oder eine Liste von Datenbanken.
+
+**Was es bedeutet.** Die verlangte Adresse ist nicht die Ihres ERP, oder es ist eine Adresse, auf die
+mehrere Dinge antworten können. Es gibt genau drei Fälle, und jeder hat seine Ursache.
+
+*Es ist die Dokumentation von Odoo, auf odoo.com, in der Sprache Ihres Browsers.* Das ist eine Seite
+über das Produkt, nicht über Ihre Maschine: nichts davon sind Ihre Daten, und sie gehört nicht zur
+Installation. Sie ist das, was eine frühere Version des Installers am Ende öffnete, und sie wird am
+Ende noch als Link zum späteren Lesen gedruckt. Schließen Sie sie und öffnen Sie die Startseite über
+das Symbol.
+
+*Es ist eine Website mit einem Logo, das Sie nicht gewählt haben, einem Menü und einem kleinen Link
+„Anmelden" in einer Ecke.* Das ist Odoos **website**-Anwendung: ein Modul, das unter der
+Wurzeladresse eine öffentliche Seite ausliefert. Einmal installiert, zeigt `http://localhost:8069`
+die Website statt der Anmeldeseite, und der ERP versteckt sich hinter dem kleinen Anmeldelink. Nichts
+ist kaputt und keine Daten sind verloren. Die Anmeldeseite hat ihre eigene Adresse, und sie
+funktioniert immer: `http://localhost:8069/web/login?db=odoo_agent`. Die Startseite und das Symbol
+benutzen diese Adresse aus diesem Grund.
+
+*Es ist eine Liste von Datenbanken, oder ein Formular, das fragt, welche Datenbank gemeint ist.* Die
+Maschine hält mehr als eine Odoo-Datenbank—eine Testkopie, eine alte Installation—und die Adresse
+nannte keine. Hängen Sie `?db=odoo_agent` an die Adresse, oder benutzen Sie die Startseite, die sie
+nennt.
+
+---
+
+## Die am Ende gedruckte Anmeldung und das Passwort funktionieren nicht
+
+**Was Sie sehen.** Die Zugangsdaten in der Zusammenfassung des Installers werden abgelehnt, und die
+Anmeldeseite sagt, Benutzername oder Passwort seien falsch.
+
+**Was es bedeutet.** Bei einer ersten Installation legt der Installer den Administrator an und druckt,
+was er angelegt hat, also stimmen beide überein. Bei einem zweiten Lauf existiert das Konto bereits
+und behält seine Anmeldung und sein Passwort: dort ein frisch erfundenes Passwort zu drucken, hieße
+ein Passwort zu drucken, das nie gesetzt wurde. Jetzt liest der Installer das Konto aus der Datenbank
+zurück und sagt entweder das Passwort, das er gesetzt hat, oder dass das Passwort seit der ersten
+Installation unverändert ist.
+
+**Was zu tun ist.** Steht in der Zusammenfassung *unverändert*, benutzen Sie das Passwort der ersten
+Installation. Ist es verloren, setzen Sie bewusst ein neues: führen Sie den Installer erneut mit
+`ADMIN_PASS` in der Umgebung aus, und er wird dieses Passwort anwenden und drucken. Sonst wird nichts
+in der Datenbank angefasst.
+
+---
+
+## Das schwarze Fenster ist verschwunden
+
+**Was Sie sehen.** Odoo antwortet weiter im Browser, aber es gibt kein Fenster zum Tippen.
+
+**Was es bedeutet.** Das schwarze Fenster *ist* der Assistent: es zu schließen stoppt den Assistenten,
+und nur den Assistenten. Der ERP läuft als eigenes Programm, und deshalb funktioniert der Browser
+weiter.
+
+**Was zu tun ist.** Doppelklicken Sie erneut auf **AI Odoo**. Es startet, was fehlt, und startet keine
+zweite Kopie von dem, was schon läuft.
+
+---
+
 ## Das ERP antwortet nicht auf seinem Port
 
 **Was Sie sehen.** Nach der Installation kann der Browser die am Ende gedruckte Adresse nicht erreichen (Vorgabe ist `http://localhost:8069`) oder der Launcher öffnet eine leere Seite.

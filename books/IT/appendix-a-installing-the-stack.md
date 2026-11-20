@@ -73,31 +73,44 @@ Lo troverà e ne verificherà la dimensione prima di usarlo.
 Alla fine la finestra stampa qualcosa come questo. Scrivilo, o fai la foto dello schermo.
 
 ```
-Odoo:          http://localhost:8069
-Amministratore: admin@yourcompany.example
-Password:      (quella che l'installer ha generato, o quella che gli hai dato)
-Database:      odoo sulla porta 5433
-Assistente:     AI Odoo (icona del desktop)
+  Odoo (l'ERP, nel browser):  http://localhost:8069
+  Login: admin@yourcompany.example
+  Password: (quella che l'installer ha generato, o quella che gli hai dato)
+  Assistente (parlagli qui):  http://localhost:5290/OfficeManager
 ```
 
-Il browser apre la pagina dei primi passi dell'ERP. Quella pagina è l'inizio della configurazione, non
-la fine dell'installazione.
+Se l'account amministratore esisteva già da un'esecuzione precedente, l'installer stampa il login che
+c'è davvero nel database e dice che la password è invariata, invece di inventarne una nuova che non
+funzionerebbe.
 
-## Passo 7 — Primo avvio dell'assistente
+Il browser apre la **pagina iniziale**: un file su questo computer con l'indirizzo, l'account e un
+link. Quella pagina è l'inizio della configurazione, non la fine dell'installazione.
 
-Fai doppio clic sull'icona **AI Odoo** sul desktop. Avvengono due cose: l'ERP inizia (se non era
-in esecuzione) e l'assistente si apre nella propria finestra di terminale. Il browser apre la pagina dell'ERP.
+## Passo 7 — L'icona, e le tre finestre
+
+Fai doppio clic sull'icona **AI Odoo** sul desktop. Avvengono tre cose:
+
+1. l'ERP parte, se non era in esecuzione;
+2. la pagina iniziale si apre nel browser;
+3. l'assistente si apre nella propria finestra nera.
+
+*Apri Odoo* sulla pagina iniziale porta alla pagina di accesso su
+`http://localhost:8069/web/login?db=odoo_agent`. L'assistente è la finestra nera, ed è lì che si
+scrive; va lasciata aperta mentre lavori, perché chiuderla ferma l'assistente, mentre Odoo continua a
+girare.
 
 Al suo primo avvio l'assistente chiede il fornitore AI: scegli il servizio, incolla la chiave, e
-questo recupera l'elenco dei modelli di quel servizio. Non serve nient'altro—l'indirizzo dell'ERP e la
+recupera l'elenco dei modelli di quel servizio. Non serve nient'altro—l'indirizzo dell'ERP e la
 chiave di accesso sono stati scritti dall'installer.
 
 ## Passo 8 — Verifica che funzioni
 
 Tre verifiche, in ordine, e ciascuna ti dice quale delle tre macchine è insoddisfatta se fallisce.
 
-1. **L'ERP.** Apri `http://localhost:8069` in un browser ed entra. Se la pagina non si carica,
-   l'ERP o il database non sono in esecuzione; il file `odoo.log` nella cartella di installazione dice perché.
+1. **L'ERP.** Clicca *Apri Odoo* sulla pagina iniziale, o apri
+   `http://localhost:8069/web/login?db=odoo_agent` in un browser, ed entra. Se la pagina non si
+   carica, l'ERP o il database non sono in esecuzione; il file `odoo.log` nella cartella di
+   installazione dice perché.
 2. **Il connettore.** Nell'assistente, chiedi: *verifica la connessione a Odoo e dimmi quale versione
    è in esecuzione.* Un numero di versione significa che la chiave e l'indirizzo sono corretti.
 3. **Il modello.** Chiedi: *quanti clienti abbiamo?* Un numero significa che l'assistente può leggere i
@@ -107,14 +120,25 @@ Se tutte e tre rispondono, l'installazione è completa.
 
 ## Disinstallazione
 
-Lo stack vive in una cartella, `%LOCALAPPDATA%\odoo-tool-stack`, più il servizio del database e i
-dati utente in `%LOCALAPPDATA%\agent`. Per rimuoverlo:
+Due script annullano l'installazione, e sono il modo supportato: `uninstall.bat` su Windows e
+`uninstall.sh` su Linux. Stanno accanto all'installer nella stessa release, e ciascuno può essere
+scaricato ed eseguito da solo.
 
-1. Ferma l'ERP e l'assistente (chiudi le loro finestre).
-2. Disinstalla PostgreSQL da *App e funzionalità* (o esegui il suo disinstallatore), ed elimina la cartella che
-   lascia in `C:\Program Files\PostgreSQL` se qualcosa resta.
-3. Elimina `%LOCALAPPDATA%\odoo-tool-stack` e `%LOCALAPPDATA%\agent`.
-4. Elimina la scorciatoia **AI Odoo** dal desktop e dal menu Start.
+Cosa rimuovono:
 
-Questa è l'intera rimozione. Non c'è nulla registrato altrove, il che è uno dei vantaggi di un
-sistema che gira sulla tua macchina.
+- il database di Odoo, con ogni cliente, prodotto, ordine, fattura e movimento di magazzino dentro;
+- la cartella di installazione (`%LOCALAPPDATA%\odoo-tool-stack`, o `~/odoo-tool-stack`);
+- le scorciatoie **AI Odoo** e la regola del firewall.
+
+Chiedono due volte, e la seconda domanda non è una formalità. La prima è un sì/no che elenca cosa
+sparisce. La seconda richiede la frase **DESTROY ALL**, scritta in maiuscolo. Se la frase non è
+esatta, non viene toccato niente—non un file, non una riga. La cancellazione è irreversibile e
+l'uninstaller non fa nessun backup, quindi una copia del database presa prima è l'unica via di
+ritorno.
+
+AgentBridge viene chiesto a parte, perché può ospitare altri strumenti e tiene le proprie
+impostazioni e chiavi API: rispondere *no* lo conserva e rimuove solo la metà Odoo.
+
+PostgreSQL resta installato. È un servizio che altri programmi possono condividere, e si rimuove da
+*App e funzionalità* come qualunque altro programma, quando nient'altro ne ha bisogno. Il ruolo
+database `odoo` resta ed è innocuo: una futura installazione lo riusa.

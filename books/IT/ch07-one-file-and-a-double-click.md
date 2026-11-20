@@ -89,16 +89,21 @@ L'ultimo passo fu l'assistente: scaricare la release pubblica, decomprimerla, in
 Poi la finestra stampò un riassunto. È vale la pena citarlo, perché è l'unica parte dell'installazione che un utente deve conservare.
 
 ```
-==> Fatto
+==> Fatto.
+  COME INIZIARE:
+    Doppio clic sull'icona 'AI Odoo' sul Desktop (o nel menu Start).
+    Si apre una pagina nel browser: dice cosa sta girando qui, con l'account e il link.
+      'Apri Odoo'  l'ERP, dove stanno i dati. Accedi con l'account qui sotto.
+    Si apre anche una finestra nera: quella e l'assistente. Scrivi li, per esempio
+    'elenca i clienti', e lasciala aperta mentre lavori.
 
-Odoo:          http://localhost:8069
-Amministratore: admin@riverton.example
-Password:      OdooDemo2026
-Database:      odoo sulla porta 5433
-Assistente:    AI Odoo (icona desktop)
+  Odoo (l'ERP, nel browser):  http://localhost:8069
+  Login: admin@riverton.example
+  Password: OdooDemo2026
+  Assistente (parlagli qui):  http://localhost:5290/OfficeManager
 ```
 
-Tre di quelle righe sono quelle che Maggie scrisse sul foglio di carta e pose nel cassetto con la salvietta: l'indirizzo, l'utente, la password. La quarta è la porta, che non aveva bisogno di conoscere, e la quinta è l'icona che avrebbe fatto doppio clic ogni mattina per l'anno successivo.
+Tre di quelle righe sono quelle che Maggie scrisse sul foglio di carta e pose nel cassetto con la salvietta: l'indirizzo, l'utente, la password. La quarta è l'indirizzo della chat, che non aveva bisogno di conoscere, e la quinta è l'icona che avrebbe fatto doppio clic ogni mattina per l'anno successivo.
 
 ## Cosa l'installatore non farà
 
@@ -118,10 +123,16 @@ Il lavoro dell'installatore è stretto ed è fatto bene: mette le tre macchine n
 
 ---
 
-C'è un piccolo pezzo di teatro alla fine che è facile trascurare e che ti dice qualcosa sulle persone che hanno scritto l'installatore. Finito, apre la pagina dei primi passi dell'ERP nel browser. Non l'assistente, non una pagina di marketing: la pagina in cui a una nuova azienda si chiede quale valuta usa, come dovrebbe apparire il suo piano dei conti, e cosa vende.
+C'è un piccolo pezzo di teatro alla fine che è facile trascurare e che ti dice qualcosa sulle persone che hanno scritto l'installatore. Finito, apre nel browser una pagina che l'installatore ha scritto lui stesso: un file su questo computer, non un sito web, con un solo pulsante grande e l'account che ha appena creato.
+
+![La pagina iniziale: cosa sta girando su questo computer, e la porta per entrare](../../assets/screens/start-01-start-page.png)
+
+Non è l'assistente, e non è una pagina di marketing. È l'unica cosa di cui una persona ha bisogno in quel momento: una dichiarazione chiara di cosa sta girando su questa macchina, una porta per entrare nell'ERP, e l'account che la apre. L'assistente non è su quella pagina e non ha bisogno di esserci: è la finestra nera che la stessa icona apre, ed è lì che si scrive una richiesta.
+
+Una versione precedente di questo installatore finiva aprendo il sito di documentazione del fornitore, e un lettore dell'edizione precedente ha raccontato cosa è successo dopo: ha visto una pagina su Odoo, nella lingua del suo browser, l'ha chiusa perché non aveva niente a che fare con la sua installazione, ha fatto doppio clic sull'icona, è finito su una pagina web con un logo segnaposto, e ha concluso che era fallito tutto. Ogni parola di quella pagina di documentazione era vera, e nessuna riguardava *il suo* computer. Quella nella figura sì.
 
 Il messaggio è: non hai finito, sei appena arrivato. La prossima ora è configurazione, ed è l'ora che decide se il sistema diventa la verità o diventa un altro programma abbandonato. L'installatore non può fare quella parte per te, e non finge di farlo.
 
-Maggie sedette davanti alla pagina dei primi passi per un lungo momento. Poi chiamò Doreen, perché il piano dei conti sarebbe stato un'argomentazione, ed era meglio avere l'argomentazione con la persona che aveva tenuto i conti per trentuno anni che averla con un consulente.
+Maggie lesse la pagina due volte, scrisse il login e la password sul foglio di carta, e cliccò *Apri Odoo*. Poi chiamò Doreen, perché il piano dei conti sarebbe stato un'argomentazione, ed era meglio avere l'argomentazione con la persona che aveva tenuto i conti per trentuno anni che averla con un consulente.
 
 Quella conversazione è il prossimo capitolo.

@@ -162,17 +162,22 @@ Puis la fenêtre imprima un résumé. Il vaut la peine de le citer, car c'est la
 utilisateur doit conserver.
 
 ```
-==> Terminé
+==> Terminé.
+  COMMENT DÉMARRER :
+    Double-cliquez sur l'icône « AI Odoo » du bureau (ou du menu Démarrer).
+    Une page s'ouvre dans le navigateur : elle dit ce qui tourne ici, avec le compte et le lien.
+      « Ouvrir Odoo »  l'ERP, où sont les données. Connectez-vous avec le compte ci-dessous.
+    Une fenêtre noire s'ouvre aussi : c'est l'assistant. Tapez-y, par exemple
+    « liste les clients », et laissez-la ouverte pendant que vous travaillez.
 
-Odoo :          http://localhost:8069
-Administrateur : admin@riverton.example
-Mot de passe :      OdooDemo2026
-Base de données :      odoo sur le port 5433
-Assistant :     AI Odoo (icône de bureau)
+  Odoo (l'ERP, dans le navigateur) :  http://localhost:8069
+  Identifiant : admin@riverton.example
+  Mot de passe : OdooDemo2026
+  Assistant (parlez-lui ici) :  http://localhost:5290/OfficeManager
 ```
 
 Trois de ces lignes sont celles que Maggie avait écrites sur la feuille de papier et mises dans le tiroir avec le
-serviette : l'adresse, l'utilisateur, le mot de passe. La quatrième est le port, qu'elle n'avait pas besoin de connaître,
+serviette : l'adresse, l'utilisateur, le mot de passe. La quatrième est l'adresse du chat, qu'elle n'avait pas besoin de connaître,
 et la cinquième est l'icône qu'elle ferait un double-clic chaque matin pour l'année suivante.
 
 ## Ce que l'installateur ne fera pas
@@ -202,16 +207,28 @@ et imprime les trois faits dont vous avez besoin pour vous connecter. Tout le re
 ---
 
 Il y a une petite pièce de théâtre à la fin qui est facile à manquer et qui vous dit quelque chose sur les personnes qui ont
-écrit l'installateur. Ayant terminé, elle ouvre la page des premières étapes de l'ERP dans le navigateur. Pas l'assistant,
-pas une page marketing : la page où une nouvelle société est demandée quelle monnaie elle utilise, à quoi son plan
-comptable devrait ressembler, et ce qu'elle vend.
+écrit l'installateur. Ayant terminé, il ouvre dans le navigateur une page que l'installateur a écrite lui-même : un fichier
+sur cet ordinateur, pas un site web, avec un seul grand bouton et le compte qu'il vient de créer.
+
+![La page de démarrage : ce qui tourne sur cet ordinateur, et la porte pour y entrer](../../assets/screens/start-01-start-page.png)
+
+Ce n'est pas l'assistant, et ce n'est pas une page marketing. C'est la seule chose dont une personne a besoin à ce
+moment-là : une déclaration claire de ce qui tourne maintenant sur cette machine, une porte pour entrer dans l'ERP, et le
+compte qui l'ouvre. L'assistant n'est pas sur cette page et n'a pas besoin d'y être : c'est la fenêtre noire que la même
+icône ouvre, et c'est là qu'on tape une demande.
+
+Une version précédente de cet installateur finissait en ouvrant le site de documentation du fournisseur, et un lecteur de
+l'édition précédente a raconté la suite : il a vu une page sur Odoo, dans la langue de son navigateur, l'a fermée parce
+qu'elle n'avait rien à voir avec son installation, a double-cliqué sur l'icône, est tombé sur une page web avec un logo
+factice, et a conclu que tout avait échoué. Chaque mot de cette page de documentation était vrai, et aucun ne parlait de
+*son* ordinateur. Celle de la figure, si.
 
 Le message est : vous n'êtes pas terminés, vous venez d'arriver. L'heure suivante est la configuration, et c'est l'heure
 qui décide si le système devient la vérité ou devient un autre programme abandonné. L'installateur ne peut pas faire cette
 partie pour vous, et il ne prétend pas le faire.
 
-Maggie s'assit devant la page des premières étapes pendant un long moment. Puis elle appela Doreen, car le plan comptable
-allait être une dispute, et il valait mieux avoir la dispute avec la personne qui tenait les livres depuis trente-et-une
-années qu'avec un consultant.
+Maggie lut la page deux fois, nota l'identifiant et le mot de passe sur la feuille de papier, et cliqua sur *Ouvrir Odoo*.
+Puis elle appela Doreen, car le plan comptable allait être une dispute, et il valait mieux avoir la dispute avec la personne
+qui tenait les livres depuis trente-et-une années qu'avec un consultant.
 
 Cette conversation est le chapitre suivant.

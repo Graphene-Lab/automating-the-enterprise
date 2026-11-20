@@ -58,9 +58,9 @@ Questa è la parte dell'architazione su cui il revisore di una compagnia chieder
 
 ## L'assistente
 
-L'assistente arriva come una release pubblica: un eseguibile, una cartella di strumenti, e il client desktop per chat. L'installer lo estrae, installa il connettore al suo interno, e crea la scorciatoia **AI Odoo**.
+L'assistente arriva come una release pubblica: un eseguibile, una cartella di strumenti, e una chat nel browser. L'installer lo estrae, installa il connettore al suo interno, e crea la scorciatoia **AI Odoo**.
 
-La scorciato è il pezzo che fa sentire il sistema un prodotto piuttosto che un progetto scientifico. Facendo doppio clic su di essa si avvia l'ERP se non è in esecuzione, si apre la pagina dell'ERP nel browser, e si apre l'assistente in una finestra di terminale. Un'icona, tre finestre, e il lavoro può iniziare.
+La scorciatoia è il pezzo che fa sentire il sistema un prodotto piuttosto che un progetto scientifico. Facendo doppio clic su di essa si avvia l'ERP se non è in esecuzione, si apre la pagina iniziale nel browser, e si apre l'assistente in una finestra di terminale. Un'icona, e poi due finestre: la pagina che dice dove sta tutto, e la finestra nera dove si scrive. Il lavoro può iniziare.
 
 La configurazione propria dell'assistente—quale fornitore AI, quale modello, quale chiave—viene chiesta al suo primo avvio, dallo stesso assistente, nella stessa finestra di terminale in cui digiterai le tue istruzioni. Quello è un buon posto per chiederlo, perché è l'unico luogo in cui la chiave può essere effettivamente verificata: l'assistente recupera la lista di modelli del fornitore con la chiave che hai incollato, e se la lista torna indietro, la chiave funziona.
 

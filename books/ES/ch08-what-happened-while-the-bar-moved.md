@@ -58,9 +58,9 @@ Esta es la parte de la arquitectura sobre la que el auditor de una empresa hará
 
 ## El asistente
 
-El asistente llega como una publicación pública: un ejecutable, una carpeta de herramientas, y el cliente de chat de escritorio. El instalador lo descomprime, instala el conector en él, y crea el acceso directo **AI Odoo**.
+El asistente llega como una publicación pública: un ejecutable, una carpeta de herramientas, y un chat en el navegador. El instalador lo descomprime, instala el conector en él, y crea el acceso directo **AI Odoo**.
 
-El acceso directo es la pieza que hace que el sistema se sienta como un producto en lugar de un proyecto de ciencias. Al hacer doble clic en él se arranca el ERP si no está corriendo, se abre la página del ERP en el navegador, y se abre el asistente en una ventana de terminal. Un ícono, tres ventanas, y el trabajo puede comenzar.
+El acceso directo es la pieza que hace que el sistema se sienta como un producto en lugar de un proyecto de ciencias. Al hacer doble clic en él se arranca el ERP si no está corriendo, se abre la página inicial en el navegador, y se abre el asistente en una ventana de terminal. Un ícono, y luego dos ventanas: la página que dice dónde está todo, y la ventana negra donde se escribe. El trabajo puede comenzar.
 
 La propia configuración del asistente—qué proveedor de IA, qué modelo, qué clave—se pregunta en su primer arranque, por el propio asistente, en la misma ventana de terminal donde escribirás tus instrucciones. Ese es un buen lugar para preguntar, porque es el único lugar donde la clave puede realmente probarse: el asistente obtiene la lista de modelos del proveedor con la clave que pegaste, y si la lista vuelve, la clave funciona.
 

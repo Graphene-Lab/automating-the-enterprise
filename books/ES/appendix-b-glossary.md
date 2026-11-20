@@ -50,6 +50,12 @@ Cada palabra que sigue es una que este libro ha usado, o que alguien usará cont
 
 **Variant.** Una versión de un producto que difiere en un atributo—tamaño, color, voltaje. Un producto con doce variantes no es doce productos, y modelarlo correctamente marca la diferencia entre un informe útil y uno inútil.
 
+**Aplicación web.** Un programa cuyas pantallas son páginas en un navegador. Puede ejecutarse en la
+computadora de otra persona—la disposición en la nube, alcanzada por una dirección de internet y
+pagada al mes—o en la tuya, como en este libro: el programa y su base de datos están en tu disco y el
+navegador se conecta a ellos en `localhost`. Las dos se ven iguales en pantalla y difieren en quién
+mantiene la máquina en marcha.
+
 **Web interface (or web UI).** Las pantallas que ves en un navegador. La interfaz web de Odoo es donde configuras la empresa, miras registros y imprimes documentos; el asistente es una segunda forma de alcanzar los mismos registros.
 
 **Workflow.** La secuencia de estados por los que pasa un documento—borrador, confirmado, entregado, facturado, pagado—y las reglas sobre quién puede moverlo de uno al siguiente. En un ERP bueno, el flujo de trabajo es la política de la empresa, escrita y hecha cumplir.

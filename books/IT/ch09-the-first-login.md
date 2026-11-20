@@ -1,12 +1,60 @@
 # 9. Il primo accesso
 
-Il browser si è aperto da solo, che è il genere di piccola cortesia che fa sentire un sistema finito. L'indirizzo era `http://localhost:8069`—`localhost` che è il modo della macchina di dire *questo computer*, e 8069 che è la porta attraverso cui l'ERP ascolta.
+L'icona ha aperto due finestre, che è una più di quante ne apra la maggior parte dei programmi.
 
-La pagina che è apparsa era quasi vuota: una carta bianca, un logo composto da due forme viola, e due campi.
+La prima era una pagina nel browser: la pagina iniziale del capitolo precedente, con la sua unica porta e l'account. La seconda era una finestra nera con un cursore dentro e una breve domanda sul fornitore AI. Insieme erano tutto il sistema—la pagina era dove i dati sarebbero stati guardati, la finestra nera era dove sarebbero stati chiesti.
 
-![La pagina di accesso dell'ERP, sulla macchina che lo sta eseguendo](../../assets/screens/odoo-01-login.png)
+Prima di cliccare qualsiasi cosa Maggie si è fatta la domanda che ferma la maggior parte delle persone a questo punto, e vale la pena risponderle con calma, perché tutto il resto di questo libro assume la risposta.
+
+"Cosa sto guardando?"
+
+## Un programma che vive in un browser
+
+Odoo è un'**applicazione web**. La frase copre due diverse sistemazioni dello stesso software, e la differenza decide chi ne è responsabile.
+
+Nella sistemazione familiare—quella cloud—il programma gira su un computer di qualcun altro, in un edificio in cui non sei mai entrato, e il tuo browser è una finestra su di esso. Digiti un indirizzo come `riverton.odoo.com`, la richiesta viaggia su internet, e una macchina in un data centre risponde. Sul tuo tavolo non è installato niente. Affitti il programma a mese, qualcun altro lo tiene in funzione, e in cambio la tua lista di clienti vive sul suo disco.
+
+Nella sistemazione che questo libro usa, il programma gira sul computer davanti a te. Non c'è nessun edificio e nessuna fattura mensile: c'è una cartella sul tuo disco, un database sullo stesso disco, e un piccolo programma che ascolta le richieste e risponde. Il browser è ancora lo schermo, ma la macchina dietro lo schermo è tua.
+
+Ecco perché l'indirizzo sembra strano. `localhost` è il nome che un computer usa per **se stesso**: `localhost:8069` significa *il programma su questa macchina, in ascolto alla porta 8069*. Non è un'azienda, non è un sito web, e non si apre dal computer di nessun altro—che è esattamente il punto. L'indirizzo è la porta, e la porta è nel tuo ufficio.
+
+Ne seguono due conseguenze, e sorprendono entrambe le persone che hanno usato solo software cloud.
+
+La prima è che **il programma deve essere in esecuzione**. Un servizio cloud è sempre attivo perché qualcuno è pagato per tenerlo attivo; la tua copia è attiva quando la finestra nera, o un processo nascosto in background, la sta eseguendo. Se la macchina è spenta, o il programma è stato fermato, il browser mostra una pagina che non riesce a connettersi—non un guasto nei tuoi dati, solo una porta con nessuno dietro. Fare di nuovo doppio clic sull'icona lo avvia, ed è la risposta alla maggior parte delle domande di questo capitolo.
+
+La seconda è che **l'indirizzo non è opzionale**. Non c'è una voce di menu che apra Odoo direttamente, perché Odoo non ha una finestra propria: la sua finestra è una scheda del browser, e una scheda del browser ha bisogno di un indirizzo. È la piccola conoscenza che l'edizione precedente di questo libro dava per scontata, e il racconto di un lettore ha dimostrato che era sbagliato. Una persona che non ha mai amministrato un server non ha motivo di sapere che un'applicazione web si raggiunge digitando il suo indirizzo, e nessun modo di indovinare `localhost:8069` da un'icona sul desktop che apre qualcos'altro.
+
+Ecco perché esiste la pagina iniziale. Non è decorazione: è l'indirizzo, scritto, con l'account accanto.
+
+## La finestra nera è l'assistente
+
+La seconda finestra non ha titolo, né menu, né pulsanti: un rettangolo nero con un cursore. È l'assistente, ed è l'unico posto dove si può scrivere una frase.
+
+Sembra incompiuta perché non è un programma di consumo. È un *terminale*—la superficie di testo semplice che i programmi usano da prima che esistesse il mouse—e l'assistente parla lì perché è lì che una conversazione con una macchina costa meno ed è più chiara: nessun layout da mantenere, nessun pulsante da cercare, e la risposta stampata nell'ordine in cui è stata prodotta, errori compresi.
+
+Le tre finestre hanno tre proprietari diversi, e sapere quale si può chiudere è la maggior parte di quello che serve a un nuovo utente:
+
+| Finestra | Cos'è | Se la chiudi |
+|---|---|---|
+| La pagina iniziale | un file sul tuo disco, aperto dal browser | non succede niente; l'icona la riapre |
+| La scheda del browser con Odoo | l'ERP, servito dal programma su questa macchina | non succede niente; i dati restano e il programma continua a girare |
+| La finestra nera | l'assistente | l'assistente si ferma. Odoo continua a girare, e l'icona riavvia l'assistente |
+
+Maggie ha lasciato aperta la pagina iniziale, perché l'indirizzo era lì, e ha cliccato *Apri Odoo*.
+
+## La pagina di accesso, e la parte dell'indirizzo che conta
+
+Il browser è andato su `http://localhost:8069/web/login?db=odoo_agent`, e la pagina era quasi vuota: una carta bianca, un logo composto da due forme viola, e due campi.
+
+![La pagina di accesso dell'ERP. La barra degli indirizzi fa parte della figura: questo è un programma su questo computer, alla porta 8069](../../assets/screens/odoo-01-login.png)
+
+La parte `db` dell'indirizzo nomina il database. `odoo_agent` è quello che l'installatore ha creato, e nominarlo significa che il browser non può finire su un altro per caso—una macchina può tenere più database, una copia di prova e uno reale, e senza il nome Odoo chiede quale intendi. Non è un'impostazione da ricordare: la pagina iniziale e l'icona la scrivono per te.
+
+Una cosa su questa pagina è una trappola, e vale la pena nominarla prima che venga cliccata. In fondo, in piccole lettere grigie, c'è un link chiamato *Gestisci database*. Apre il gestore dei database di Odoo, che può creare, duplicare, fare il backup e **cancellare** database, e chiede una password principale che non ha niente a che fare con il tuo accesso. L'installatore ha già creato il database; il gestore è uno strumento per un amministratore che sa perché l'ha aperto. Niente in questo libro ne ha bisogno.
 
 Maggie ha digitato l'indirizzo dell'amministratore che l'installatore aveva stampato, e la password, e ha premuto Invio.
+
+Se la pagina nel tuo browser non è questa, è una di tre cose, e nessuna significa che l'installazione è fallita: una pagina su Odoo nel sito del fornitore, un sito web con un logo che non hai scelto, o una lista di database. L'appendice C le prende una per una.
 
 Niente di drammatico è successo. Questa è la prima cosa che vale la pena dire sull'ERP: non ti saluta. Non ti complimenta. Apre una pagina con un menu in alto e poche carte colorate, e aspetta di essere detto chi è.
 

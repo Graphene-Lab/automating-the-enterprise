@@ -157,16 +157,21 @@ Luego la ventana imprimió un resumen. Vale la pena citarlo, porque es la única
 instalación que un usuario debe conservar.
 
 ```
-==> Hecho
+==> Hecho.
+  CÓMO EMPEZAR:
+    Haz doble clic en el icono 'AI Odoo' del escritorio (o del menú Inicio).
+    Se abre una página en el navegador: dice qué está funcionando aquí, con la cuenta y el enlace.
+      'Abrir Odoo'  el ERP, donde están los datos. Entra con la cuenta de abajo.
+    También se abre una ventana negra: ese es el asistente. Escribe allí, por ejemplo
+    'lista los clientes', y déjala abierta mientras trabajas.
 
-Odoo:          http://localhost:8069
-Administrador: admin@riverton.example
-Contraseña:      OdooDemo2026
-Base de datos:      odoo en el puerto 5433
-Asistente:     AI Odoo (ícono de escritorio)
+  Odoo (el ERP, en el navegador):  http://localhost:8069
+  Usuario: admin@riverton.example
+  Contraseña: OdooDemo2026
+  Asistente (háblale aquí):  http://localhost:5290/OfficeManager
 ```
 
-Tres de esas líneas son las que Maggie escribió en la hoja de papel y puso en el cajón con la servilleta: la dirección, el usuario, la contraseña. La cuarta es el puerto, que ella no necesitaba saber, y la quinta es el ícono en el que haría doble clic cada mañana durante el próximo año.
+Tres de esas líneas son las que Maggie escribió en la hoja de papel y puso en el cajón con la servilleta: la dirección, el usuario, la contraseña. La cuarta es la dirección del chat, que ella no necesitaba saber, y la quinta es el ícono en el que haría doble clic cada mañana durante el próximo año.
 
 ## Lo que el instalador no hará
 
@@ -193,11 +198,28 @@ cablea juntas, e imprime las tres cosas que necesitas para iniciar sesión. Todo
 ---
 
 Hay una pequeña pieza de teatro al final que es fácil de pasar por alto y que te dice algo sobre
-las personas que escribieron el instalador. Habiendo terminado, abre la página de primeros pasos del
-ERP en el navegador. No el asistente, no una página de marketing: la página donde se le pregunta a una nueva empresa qué moneda usa, cómo debería ser su plan de cuentas, y qué vende.
+las personas que escribieron el instalador. Habiendo terminado, abre en el navegador una página que
+el instalador escribió él mismo: un archivo en esta computadora, no un sitio web, con un solo botón
+grande y la cuenta que acaba de crear.
+
+![La página inicial: qué está funcionando en esta computadora, y la puerta para entrar](../../assets/screens/start-01-start-page.png)
+
+No es el asistente, y no es una página de marketing. Es lo único que una persona necesita en ese
+momento: una declaración clara de qué está funcionando ahora en esta máquina, una puerta para entrar
+al ERP, y la cuenta que la abre. El asistente no está en esa página y no necesita estarlo: es la
+ventana negra que abre el mismo icono, y es allí donde se escribe una petición.
+
+Una versión anterior de este instalador terminaba abriendo el sitio de documentación del proveedor, y
+un lector de la edición anterior contó lo que pasó después: vio una página sobre Odoo, en el idioma de
+su navegador, la cerró porque no tenía nada que ver con su instalación, hizo doble clic en el icono,
+cayó en una página web con un logo de relleno, y concluyó que todo había fallado. Cada palabra de esa
+página de documentación era verdadera, y ninguna hablaba de *su* computadora. La de la figura sí.
 
 El mensaje es: no has terminado, acabas de llegar. La próxima hora es de configuración, y es la hora que decide si el sistema se convierte en la verdad o se convierte en otro programa abandonado. El instalador no puede hacer esa parte por ti, y no finge hacerlo.
 
-Maggie se sentó frente a la página de primeros pasos durante un largo momento. Luego llamó a Doreen, porque el plan de cuentas se iba a convertir en un argumento, y era mejor tener el argumento con la persona que había llevado las contabilidad durante treinta y un años que tenerlo con un consultor.
+Maggie leyó la página dos veces, escribió el usuario y la contraseña en la hoja de papel, y hizo
+clic en *Abrir Odoo*. Luego llamó a Doreen, porque el plan de cuentas se iba a convertir en un
+argumento, y era mejor tener el argumento con la persona que había llevado la contabilidad durante
+treinta y un años que tenerlo con un consultor.
 
 Esa conversación es el próximo capítulo.

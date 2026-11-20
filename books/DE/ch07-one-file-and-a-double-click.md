@@ -89,13 +89,18 @@ Der letzte Schritt war der Assistent: die öffentliche Version herunterladen, en
 Dann druckte das Fenster eine Zusammenfassung. Es lohnt sich, sie zu zitieren, weil sie der einzige Teil der Installation ist, den ein Benutzer aufbewahren muss.
 
 ```
-==> Fertig
+==> Fertig.
+  SO STARTEN SIE:
+    Doppelklick auf das Symbol 'AI Odoo' auf dem Desktop (oder im Startmenü).
+    Im Browser öffnet sich eine Seite: sie sagt, was hier läuft, mit dem Konto und dem Link.
+      'Odoo öffnen'  der ERP, wo die Daten liegen. Melden Sie sich mit dem Konto unten an.
+    Ein schwarzes Fenster öffnet sich ebenfalls: das ist der Assistent. Tippen Sie dort, zum Beispiel
+    'liste die Kunden', und lassen Sie es offen, während Sie arbeiten.
 
-Odoo:          http://localhost:8069
-Administrator: admin@riverton.example
-Passwort:      OdooDemo2026
-Datenbank:      odoo auf Port 5433
-Assistent:     AI Odoo (Desktop-Symbol)
+  Odoo (der ERP, im Browser):  http://localhost:8069
+  Anmeldung: admin@riverton.example
+  Passwort: OdooDemo2026
+  Assistent (hier sprechen Sie mit ihm):  http://localhost:5290/OfficeManager
 ```
 
 Drei jener Zeilen sind die, die Maggie auf das Blatt Papier schrieb und in die Schublade mit der Serviette legte: die Adresse, der Benutzer, das Asswort. Die vierte ist der Port, den sie nicht zu kennen brauchte, und die fünfte ist das Symbol, das sie jeden Morgen für das nächste Jahr doppelklickte.
@@ -118,10 +123,31 @@ Die Aufgabe des Installers ist schmal und er tut sie gut: er stellt die drei Mas
 
 ---
 
-Am Ende gibt es ein kleines Stück Theater, das leicht übersehen wird und das dir etwas über die Menschen sagt, die den Installer geschrieben haben. Nachdem es fertig ist, öffnet es die Erster-Schritte-Seite des ERP im Browser. Nicht der Assistent, keine Marketingseite: die Seite, auf der einer neuen Firma gefragt wird, welche Währung sie benutzt, wie ihr Kontenplan aussehen soll, und was sie verkauft.
+Am Ende gibt es ein kleines Stück Theater, das leicht übersehen wird und das dir etwas über die
+Menschen sagt, die den Installer geschrieben haben. Nach dem Ende öffnet er im Browser eine Seite,
+die der Installer selbst geschrieben hat: eine Datei auf diesem Rechner, keine Website, mit einem
+einzigen großen Knopf und dem Konto, das er gerade angelegt hat.
+
+![Die Startseite: was auf diesem Rechner läuft, und die Tür hinein](../../assets/screens/start-01-start-page.png)
+
+Es ist nicht der Assistent, und es ist keine Werbeseite. Es ist das Einzige, was ein Mensch in
+diesem Moment braucht: eine schlichte Aussage darüber, was jetzt auf dieser Maschine läuft, eine Tür
+in den ERP, und das Konto, das sie öffnet. Der Assistent ist nicht auf dieser Seite und muss es auch
+nicht sein: er ist das schwarze Fenster, das dasselbe Symbol öffnet, und dort wird ein Auftrag
+getippt.
+
+Eine frühere Version dieses Installers öffnete am Ende die Dokumentationsseite des Herstellers, und
+ein Leser der vorigen Auflage beschrieb, was dann geschah: er sah eine Seite über Odoo, in der
+Sprache seines Browsers, schloss sie, weil sie mit seiner Installation nichts zu tun hatte, machte
+einen Doppelklick auf das Symbol, landete auf einer Webseite mit einem Platzhalter-Logo und schloss
+daraus, dass alles fehlgeschlagen sei. Jedes Wort jener Dokumentationsseite war wahr, und keines
+handelte von *seinem* Rechner. Das auf der Abbildung schon.
 
 Die Botschaft ist: du bist nicht fertig, du bist gerade angekommen. Die nächste Stunde ist Konfiguration, und sie ist die Stunde, die entscheidet, ob das System zur Wahrheit wird oder zu einem anderen aufgegebenen Programm. Der Installer kann diesen Teil nicht für dich tun, und er tut nicht so, als könne er.
 
-Maggie saß einen langen Moment vor der Erster-Schritte-Seite. Dann rief sie Doreen an, weil der Kontenplan ein Streitpunkt werden würde, und es besser war, den Streit mit der Person zu haben, die seit dreizehn Jahren die Bücher führte, als ihn mit einem Berater.
+Maggie las die Seite zweimal, schrieb Anmeldung und Passwort auf den Zettel und klickte auf *Odoo
+öffnen*. Dann rief sie Doreen an, weil der Kontenplan ein Streitpunkt werden würde, und es besser
+war, den Streit mit der Person zu haben, die seit dreizehn Jahren die Bücher führte, als ihn mit
+einem Berater.
 
 Dieses Gespräch ist das nächste Kapitel.

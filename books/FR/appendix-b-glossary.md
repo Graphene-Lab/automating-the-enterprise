@@ -24,6 +24,14 @@ Chaque mot ci-dessous est un mot que ce livre a utilisé, ou que quelqu'un emplo
 
 **Modèle de langage (LLM).** Un programme entraîné sur une quantité énorme de texte, capable de produire du texte plausible en réponse à une instruction. Il est bon en langage et peu fiable dans les faits, sauf s'il est *ancré*—c'est-à-dire s'il est amené à rechercher les faits plutôt qu'à s'en souvenir.
 
+**Localhost.** Le nom qu'un ordinateur utilise pour lui-même. `localhost:8069` signifie *le programme
+sur cette machine à l'écoute de la porte 8069*, et cela ne s'ouvre que depuis cette machine. C'est
+l'opposé du nom de domaine d'une société, qui résout vers l'ordinateur de quelqu'un d'autre.
+
+**Localhost.** Le nom qu'un ordinateur utilise pour lui-même. `localhost:8069` signifie *le programme
+sur cette machine à l'écoute de la porte 8069*, et cela ne s'ouvre que depuis cette machine. C'est
+l'opposé du nom de domaine d'une société, qui résout vers l'ordinateur de quelqu'un d'autre.
+
 **MCP.** Model Context Protocol. Une norme ouverte, publiée par Anthropic en novembre 2024, qui permet à un programme de décrire les outils qu'il met à disposition d'un assistant de façon uniforme. C'est la raison pour laquelle un outil écrit pour un assistant peut être utilisé par un autre.
 
 **Modèle (dans ce livre, deux sens).** 1. La représentation d'une entreprise à l'intérieur d'un ERP : parties, produits, documents, argent. 2. L'artefact entraîné derrière un assistant : le « modèle de langage ». Le contexte précise lequel ; lorsqu'il ne le précise pas, c'est généralement le premier sens qui compte.
@@ -49,6 +57,18 @@ Chaque mot ci-dessous est un mot que ce livre a utilisé, ou que quelqu'un emplo
 **Transaction.** Un changement qui se produit soit complètement, soit pas du tout. C'est la promesse qui rend une base de données digne de confiance : il n'existe aucun état dans lequel une facture existerait à moitié.
 
 **Variante.** Une version d'un produit qui diffère par un seul attribut—taille, couleur, tension. Un seul produit avec douze variantes n'est pas douze produits, et le modéliser correctement fait la différence entre un rapport utile et un rapport inutile.
+
+**Application web.** Un programme dont les écrans sont des pages dans un navigateur. Il peut tourner
+sur l'ordinateur de quelqu'un d'autre—la disposition cloud, atteinte par une adresse internet et payée
+au mois—ou sur le vôtre, comme dans ce livre : le programme et sa base de données sont sur votre
+disque et le navigateur s'y connecte sur `localhost`. Les deux se ressemblent à l'écran et diffèrent
+par qui maintient la machine en marche.
+
+**Application web.** Un programme dont les écrans sont des pages dans un navigateur. Il peut tourner
+sur l'ordinateur de quelqu'un d'autre—la disposition cloud, atteinte par une adresse internet et payée
+au mois—ou sur le vôtre, comme dans ce livre : le programme et sa base de données sont sur votre
+disque et le navigateur s'y connecte sur `localhost`. Les deux se ressemblent à l'écran et diffèrent
+par qui maintient la machine en marche.
 
 **Interface web (ou interface web, UI).** Les écrans que vous voyez dans un navigateur. L'interface web d'Odoo est l'endroit où vous configurez l'entreprise, où vous consultez les enregistrements et où vous imprimez des documents ; l'assistant est une seconde façon d'atteindre les mêmes enregistrements.
 

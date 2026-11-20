@@ -58,9 +58,9 @@ C'est la partie de l'architecture qu'un auditeur d'entreprise posera, et la rép
 
 ## L'assistant
 
-L'assistant arrive en tant que version publique : un exécutable, un dossier de outils, et le client de chat de bureau. L'installateur le décompacte, installe le connecteur en lui, et crée le raccourci **AI Odoo**.
+L'assistant arrive en tant que version publique : un exécutable, un dossier d'outils, et un chat dans le navigateur. L'installateur le décompacte, installe le connecteur en lui, et crée le raccourci **AI Odoo**.
 
-Le raccourci est la pièce qui fait sentir au système qu'il est un produit plutôt qu'un projet scientifique. Double-cliquer dessus démarre l'ERP s'il ne tourne pas, ouvre la page de l'ERP dans le navigateur, et ouvre l'assistant dans une fenêtre de terminal. Une icône, trois fenêtres, et le travail peut commencer.
+Le raccourci est la pièce qui fait sentir au système qu'il est un produit plutôt qu'un projet scientifique. Double-cliquer dessus démarre l'ERP s'il ne tourne pas, ouvre la page de démarrage dans le navigateur, et ouvre l'assistant dans une fenêtre de terminal. Une icône, puis deux fenêtres : la page qui dit où tout se trouve, et la fenêtre noire où l'on tape. Le travail peut commencer.
 
 La configuration propre à l'assistant—quel fournisseur d'IA, quel modèle, quelle clé—est demandée à son premier démarrage, par l'assistant lui-même, dans la même fenêtre de terminal où vous taperez vos instructions. C'est un bon endroit pour demander, car c'est le seul endroit où la clé peut réellement être testée : l'assistant récupère la liste des modèles du fournisseur avec la clé que vous avez collée, et si la liste revient, la clé fonctionne.
 

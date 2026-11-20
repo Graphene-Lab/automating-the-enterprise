@@ -57,38 +57,74 @@ Si la machine ne peut pas atteindre le vendeur du tout, téléchargez vous-même
 À la fin, la fenêtre imprime quelque chose comme ceci. Notez-le, ou photographiez l'écran.
 
 ```
-Odoo:          http://localhost:8069
-Administrateur: admin@yourcompany.example
-Mot de passe:      (celui que l'installateur a généré, ou celui que vous lui avez donné)
-Base de données:      odoo sur le port 5433
-Assistant:     AI Odoo (icône de bureau)
+  Odoo (l'ERP, dans le navigateur) :  http://localhost:8069
+  Identifiant : admin@yourcompany.example
+  Mot de passe : (celui que l'installateur a généré, ou celui que vous lui avez donné)
+  Assistant (parlez-lui ici) :  http://localhost:5290/OfficeManager
 ```
 
-Le navigateur ouvre la page des premiers pas de l'ERP. Cette page est le début de la configuration, et non la fin de l'installation.
+Si le compte administrateur existait déjà depuis une exécution précédente, l'installateur imprime
+l'identifiant qui se trouve réellement dans la base et dit que le mot de passe est inchangé, au lieu
+d'en inventer un nouveau qui ne fonctionnerait pas.
 
-## Étape 7 — Premier démarrage de l'assistant
+Le navigateur ouvre la **page de démarrage** : un fichier sur cet ordinateur avec l'adresse, le compte
+et un lien. Cette page est le début de la configuration, et non la fin de l'installation.
 
-Double-cliquez sur l'icône **AI Odoo** sur le bureau. Deux choses se produisent : l'ERP démarre (s'il n'était pas en cours d'exécution) et l'assistant s'ouvre dans sa propre fenêtre de terminal. Le navigateur ouvre la page de l'ERP.
+## Étape 7 — L'icône, et les trois fenêtres
 
-À son premier démarrage, l'assistant demande le fournisseur d'IA : choisissez le service, collez la clé, et il récupère la liste des modèles de ce service. Rien d'autre n'est nécessaire — l'adresse de l'ERP et la clé d'accès ont été écrites par l'installateur.
+Double-cliquez sur l'icône **AI Odoo** du bureau. Trois choses se produisent :
+
+1. l'ERP démarre, s'il n'était pas en cours d'exécution ;
+2. la page de démarrage s'ouvre dans le navigateur ;
+3. l'assistant s'ouvre dans sa propre fenêtre noire.
+
+*Ouvrir Odoo* sur la page de démarrage mène à la page de connexion sur
+`http://localhost:8069/web/login?db=odoo_agent`. L'assistant est la fenêtre noire, et c'est là qu'on
+tape ; il faut la laisser ouverte pendant que vous travaillez, car la fermer arrête l'assistant, alors
+qu'Odoo continue de tourner.
+
+À son premier démarrage, l'assistant demande le fournisseur d'IA : choisissez le service, collez la
+clé, et il récupère la liste des modèles de ce service. Rien d'autre n'est nécessaire — l'adresse de
+l'ERP et la clé d'accès ont été écrites par l'installateur.
 
 ## Étape 8 — Vérifier que cela fonctionne
 
-Trois vérifications, dans l'ordre, et chacune vous indique laquelle des trois machines est mécontente si elle échoue.
+Trois vérifications, dans l'ordre, et chacune vous indique laquelle des trois machines est mécontente
+si elle échoue.
 
-1. **L'ERP.** Ouvrez `http://localhost:8069` dans un navigateur et connectez-vous. Si la page ne se charge pas, l'ERP ou la base de données n'est pas en cours d'exécution ; le fichier `odoo.log` dans le dossier d'installation explique pourquoi.
-2. **Le connecteur.** Dans l'assistant, demandez : *vérifiez la connexion à Odoo et dites-moi quelle version est en cours d'exécution.* Un numéro de version signifie que la clé et l'adresse sont justes.
-3. **Le modèle.** Demandez : *combien de clients avons-nous ?* Un nombre signifie que l'assistant peut lire les données de l'ERP en tant qu'utilisateur, avec les permissions de cet utilisateur.
+1. **L'ERP.** Cliquez sur *Ouvrir Odoo* sur la page de démarrage, ou ouvrez
+   `http://localhost:8069/web/login?db=odoo_agent` dans un navigateur, et connectez-vous. Si la page
+   ne se charge pas, l'ERP ou la base de données n'est pas en cours d'exécution ; le fichier
+   `odoo.log` dans le dossier d'installation explique pourquoi.
+2. **Le connecteur.** Dans l'assistant, demandez : *vérifiez la connexion à Odoo et dites-moi quelle
+   version est en cours d'exécution.* Un numéro de version signifie que la clé et l'adresse sont
+   justes.
+3. **Le modèle.** Demandez : *combien de clients avons-nous ?* Un nombre signifie que l'assistant peut
+   lire les données de l'ERP en tant qu'utilisateur, avec les permissions de cet utilisateur.
 
 Si les trois répondent, l'installation est complète.
 
 ## Désinstallation
 
-La pile vit dans un seul dossier, `%LOCALAPPDATA%\odoo-tool-stack`, plus le service de base de données et les données utilisateur dans `%LOCALAPPDATA%\agent`. Pour la supprimer :
+Deux scripts annulent l'installation, et c'est la manière prise en charge : `uninstall.bat` sous
+Windows et `uninstall.sh` sous Linux. Ils se trouvent à côté de l'installateur dans la même version,
+et chacun peut être téléchargé et exécuté seul.
 
-1. Stoppez l'ERP et l'assistant (fermez leurs fenêtres).
-2. Désinstallez PostgreSQL dans *Applications et fonctionnalités* (ou exécutez son désinstallateur), et supprimez le dossier qu'il laisse dans `C:\Program Files\PostgreSQL` s'il reste quelque chose.
-3. Supprimez `%LOCALAPPDATA%\odoo-tool-stack` et `%LOCALAPPDATA%\agent`.
-4. Supprimez le raccourci **AI Odoo** du bureau et du menu Démarrer.
+Ce qu'ils suppriment :
 
-Telle est la totalité de la suppression. Rien n'est enregistré ailleurs, ce qui est un des avantages d'un système qui tourne sur votre propre machine.
+- la base de données Odoo, avec chaque client, produit, commande, facture et mouvement de stock ;
+- le dossier d'installation (`%LOCALAPPDATA%\odoo-tool-stack`, ou `~/odoo-tool-stack`) ;
+- les raccourcis **AI Odoo** et la règle de pare-feu.
+
+Ils demandent deux fois, et la seconde question n'est pas une formalité. La première est un oui/non qui
+énumère ce qui disparaît. La seconde exige la phrase **DESTROY ALL**, tapée en majuscules. Si la
+phrase n'est pas exacte, rien n'est touché—pas un fichier, pas une ligne. La suppression est
+irréversible et le désinstalleur ne fait aucune sauvegarde : une copie de la base prise avant est le
+seul chemin de retour.
+
+AgentBridge est demandé à part, parce qu'il peut héberger d'autres outils et garde ses propres
+réglages et clés d'API : répondre *non* le conserve et ne retire que la moitié Odoo.
+
+PostgreSQL reste installé. C'est un service que d'autres programmes peuvent partager, et il se retire
+dans *Applications et fonctionnalités* comme n'importe quel programme, quand plus rien n'en a besoin.
+Le rôle de base `odoo` reste et il est inoffensif : une future installation le réutilise.

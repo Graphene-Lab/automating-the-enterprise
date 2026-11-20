@@ -24,6 +24,10 @@ Jedes unten stehende Wort wurde in diesem Buch verwendet oder wird Ihnen beim In
 
 **Sprachmodell (LLM).** Ein Programm, das auf einer enormen Menge an Text geschult wurde und in der Lage ist, glaubhaften Text als Antwort auf eine Anweisung zu erzeugen. Es ist gut in Sprache und unzuverlässig in Fakten, es sei denn, es ist *geerdet*—das heißt, es wird gezwungen, die Fakten nachzuschlagen statt sie sich zu merken.
 
+**Localhost.** Der Name, den ein Rechner für sich selbst benutzt. `localhost:8069` bedeutet *das
+Programm auf dieser Maschine, das an Tür 8069 lauscht*, und es öffnet sich nur von dieser Maschine.
+Es ist das Gegenteil des Domainnamens einer Firma, der auf den Rechner von jemand anderem auflöst.
+
 **MCP.** Model Context Protocol. Ein offener Standard, veröffentlicht von Anthropic im November 2024, der einem Programm ermöglicht, die Tools, die es einem Assistenten anbietet, in einheitlicher Weise zu beschreiben. Es ist der Grund, warum ein für einen Assistenten geschriebenes Tool von einem anderen verwendet werden kann.
 
 **Modell (in diesem Buch, zwei Bedeutungen).** 1. Die Repräsentation eines Unternehmens innerhalb eines ERP: Parteien, Produkte, Dokumente, Geld. 2. Das geschulte Artefakt hinter einem Assistenten: das „Sprachmodell." Der Kontext macht deutlich, welche gemeint ist; wenn nicht, ist meist die erste Bedeutung diejenige, die zählt.
@@ -49,6 +53,12 @@ Jedes unten stehende Wort wurde in diesem Buch verwendet oder wird Ihnen beim In
 **Transaktion.** Eine Änderung, die entweder vollständig geschieht oder gar nicht. Sie ist das Versprechen, das eine Datenbank vertrauenswürdig macht: es gibt keinen Zustand, in dem eine halbe Rechnung existiert.
 
 **Variante.** Eine Version eines Produkts, das sich in einem—at—unterscheidet—Größe, Farbe, Spannung. Ein Produkt mit zwölf Varianten ist nicht zwölf Produkte, und seine korrekte Modellierung ist der Unterschied zwischen einem nützlichen Bericht und einem nutzlosen.
+
+**Webanwendung.** Ein Programm, dessen Bildschirme Seiten in einem Browser sind. Es kann auf dem
+Rechner von jemand anderem laufen—die Cloud-Anordnung, über eine Internetadresse erreicht und
+monatlich bezahlt—oder auf Ihrem, wie in diesem Buch: das Programm und seine Datenbank liegen auf
+Ihrer Festplatte, und der Browser verbindet sich mit ihnen unter `localhost`. Beide sehen auf dem
+Bildschirm gleich aus und unterscheiden sich darin, wer die Maschine am Laufen hält.
 
 **Web-Oberfläche (oder Web-UI).** Die Bildschirme, die Sie in einem Browser sehen. Odos Web-Oberfläche ist der Ort, an dem Sie das Unternehmen konfigurieren, Datensätze ansehen und Dokumente drucken; der Assistent ist ein zweiter Weg, dieselben Datensätze zu erreichen.
 

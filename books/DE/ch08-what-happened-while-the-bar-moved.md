@@ -60,7 +60,11 @@ Dies ist der Teil der Architektur, nach dem der Prüfer eines Unternehmens frage
 
 Der Assistent kommt als öffentliche Veröffentlichung: ein ausführbare Datei, ein Ordner aus Werkzeugen und der Desktop-Chat-Client. Der Installer entpackt ihn, installiert den Connector darin und erstellt die Verknüpfung **AI Odoo**.
 
-Die Verknüpfung ist das Stück, das das System wie ein Produkt statt wie ein Wissenschaftsprojekt fühlen läßt. Das Doppelklick darauf startet das ERP, falls es nicht läuft, öffnet die ERP-Seite im Browser und öffnet den Assistenten in einem Terminalfenster. Ein Symbol, drei Fenster, und die Arbeit kann beginnen.
+Die Verknüpfung ist das Stück, das das System wie ein Produkt wirken lässt statt wie ein
+wissenschaftliches Projekt. Ein Doppelklick darauf startet den ERP, wenn er nicht läuft, öffnet die
+Startseite im Browser und öffnet den Assistenten in einem Terminalfenster. Ein Symbol, und dann zwei
+Fenster: die Seite, die sagt, wo alles liegt, und das schwarze Fenster, in das man tippt. Die Arbeit
+kann beginnen.
 
 Die eigene Konfiguration des Assistenten—welcher AI-Anbieter, welches Modell, welcher Schlüssel—wird beim ersten Start abgefragt, vom Assistenten selbst, im selben Terminalfenster, in dem man seine Anweisungen tippen wird. Das ist ein guter Ort, um zu fragen, weil es der einzige Ort ist, an dem der Schlüssel tatsächlich getestet werden kann: der Assistent ruft die Modellliste des Anbieters mit dem Schlüssel ab, den man eingefügt hat, und wenn die Liste zurückkommt, funktioniert der Schlüssel.
 

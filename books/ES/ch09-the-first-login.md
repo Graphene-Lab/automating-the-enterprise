@@ -1,12 +1,103 @@
 # 9. El primer acceso
 
-El navegador se abrió solo, que es el tipo de pequeño detalle que hace que un sistema parezca terminado. La dirección era `http://localhost:8069`—`localhost` siendo la forma de la máquina de decir *esta computadora*, y 8069 siendo la puerta tras la cual escucha el ERP.
+El icono abrió dos ventanas, que es una más de las que abre la mayoría de los programas.
 
-La página que apareció estaba casi vacía: una tarjeta blanca, un logo formado por dos formas púrpuras, y dos campos.
+La primera era una página en el navegador: la página inicial del capítulo anterior, con su única
+puerta y la cuenta. La segunda era una ventana negra con un cursor dentro y una breve pregunta sobre
+el proveedor de IA. Juntas eran todo el sistema—la página era donde se mirarían los datos, la ventana
+negra era donde se pedirían.
 
-![La página de acceso del ERP, en la máquina que lo está ejecutando](../../assets/screens/odoo-01-login.png)
+Antes de hacer clic en nada, Maggie se hizo la pregunta que detiene a la mayoría de la gente en este
+punto, y vale la pena responderla despacio, porque todo el resto de este libro da la respuesta por
+sentada.
 
-Maggie escribió la dirección de administrador que había impreso el instalador, y la contraseña, y pulsó Intro.
+"¿Qué estoy mirando?"
+
+## Un programa que vive en un navegador
+
+Odoo es una **aplicación web**. La frase cubre dos disposiciones distintas del mismo software, y la
+diferencia decide quién es responsable de él.
+
+En la disposición familiar—la de la nube—el programa se ejecuta en una computadora de otra persona, en
+un edificio en el que nunca has entrado, y tu navegador es una ventana hacia ella. Escribes una
+dirección como `riverton.odoo.com`, la petición viaja por internet, y una máquina en un centro de
+datos responde. En tu escritorio no hay nada instalado. Alquilas el programa por mes, otra persona lo
+mantiene en marcha, y a cambio tu lista de clientes vive en su disco.
+
+En la disposición que usa este libro, el programa se ejecuta en la computadora que tienes delante. No
+hay edificio ni factura mensual: hay una carpeta en tu disco, una base de datos en el mismo disco, y
+un pequeño programa que escucha las peticiones y responde. El navegador sigue siendo la pantalla, pero
+la máquina detrás de la pantalla es tuya.
+
+Por eso la dirección parece extraña. `localhost` es el nombre que una computadora usa para **sí
+misma**: `localhost:8069` significa *el programa en esta máquina, escuchando en el puerto 8069*. No es
+una empresa, no es un sitio web, y no se abre desde la computadora de nadie más—que es exactamente el
+punto. La dirección es la puerta, y la puerta está en tu oficina.
+
+Se siguen dos consecuencias, y ambas sorprenden a quien solo ha usado software en la nube.
+
+La primera es que **el programa tiene que estar en ejecución**. Un servicio en la nube siempre está
+activo porque alguien cobra por mantenerlo activo; tu copia está activa cuando la ventana negra, o un
+proceso oculto en segundo plano, la está ejecutando. Si la máquina está apagada, o el programa se
+detuvo, el navegador muestra una página que no puede conectarse—no una avería en tus datos, solo una
+puerta sin nadie detrás. Hacer doble clic en el icono otra vez lo inicia, y es la respuesta a la
+mayoría de las preguntas de este capítulo.
+
+La segunda es que **la dirección no es opcional**. No hay una entrada de menú que abra Odoo
+directamente, porque Odoo no tiene una ventana propia: su ventana es una pestaña del navegador, y una
+pestaña del navegador necesita una dirección. Es el pequeño conocimiento que la edición anterior de
+este libro daba por supuesto, y el relato de un lector demostró que era falso. Una persona que nunca
+ha administrado un servidor no tiene motivo para saber que una aplicación web se alcanza escribiendo
+su dirección, y ninguna forma de adivinar `localhost:8069` desde un icono del escritorio que abre otra
+cosa.
+
+Por eso existe la página inicial. No es decoración: es la dirección, escrita, con la cuenta al lado.
+
+## La ventana negra es el asistente
+
+La segunda ventana no tiene título, ni menús, ni botones: un rectángulo negro con un cursor. Es el
+asistente, y es el único lugar donde se puede escribir una frase.
+
+Parece inacabada porque no es un programa de consumo. Es un *terminal*—la superficie de texto simple
+que los programas usan desde antes de que existiera el ratón—y el asistente habla allí porque es donde
+una conversación con una máquina cuesta menos y es más clara: ningún diseño que mantener, ningún botón
+que buscar, y la respuesta impresa en el orden en que se produjo, errores incluidos.
+
+Las tres ventanas tienen tres dueños distintos, y saber cuál se puede cerrar es la mayor parte de lo
+que necesita un usuario nuevo:
+
+| Ventana | Qué es | Si la cierras |
+|---|---|---|
+| La página inicial | un archivo en tu disco, abierto por el navegador | no pasa nada; el icono la vuelve a abrir |
+| La pestaña del navegador con Odoo | el ERP, servido por el programa en esta máquina | no pasa nada; los datos quedan y el programa sigue funcionando |
+| La ventana negra | el asistente | el asistente se detiene. Odoo sigue funcionando, y el icono reinicia el asistente |
+
+Maggie dejó abierta la página inicial, porque la dirección estaba allí, e hizo clic en *Abrir Odoo*.
+
+## La página de acceso, y la parte de la dirección que importa
+
+El navegador fue a `http://localhost:8069/web/login?db=odoo_agent`, y la página estaba casi vacía: una
+tarjeta blanca, un logo formado por dos formas púrpuras, y dos campos.
+
+![La página de acceso del ERP. La barra de direcciones forma parte de la figura: este es un programa en esta computadora, en el puerto 8069](../../assets/screens/odoo-01-login.png)
+
+La parte `db` de la dirección nombra la base de datos. `odoo_agent` es la que creó el instalador, y
+nombrarla significa que el navegador no puede caer en otra por accidente—una máquina puede tener
+varias bases, una copia de prueba y una real, y sin el nombre Odoo pregunta cuál quieres decir. No es
+un ajuste que recordar: la página inicial y el icono la escriben por ti.
+
+Una cosa en esta página es una trampa, y vale la pena nombrarla antes de que se haga clic. Abajo, en
+letras pequeñas grises, hay un enlace llamado *Gestionar bases de datos*. Abre el gestor de bases de
+datos de Odoo, que puede crear, duplicar, respaldar y **borrar** bases, y pide una contraseña maestra
+que no tiene nada que ver con tu acceso. El instalador ya creó la base; el gestor es una herramienta
+para un administrador que sabe por qué lo abrió. Nada en este libro lo necesita.
+
+Maggie escribió la dirección del administrador que el instalador había impreso, y la contraseña, y
+pulsó Intro.
+
+Si la página en tu navegador no es esta, es una de tres cosas, y ninguna significa que la instalación
+haya fallado: una página sobre Odoo en el sitio del proveedor, un sitio web con un logo que no
+elegiste, o una lista de bases de datos. El apéndice C las toma una por una.
 
 No pasó nada dramático. Esa es la primera cosa digna de decir sobre el ERP: no te saluda. No te felicita. Abre una página con un menú en la parte superior y algunas tarjetas de colores, y espera a que se le diga qué es.
 

@@ -38,6 +38,128 @@ Avant tout, une habitude. Quand quelque chose se passe mal, ne réinstallez pas.
 
 ---
 
+## La page qui s'ouvre n'est pas celle de connexion
+
+**Ce que vous voyez.** Vous double-cliquez sur **AI Odoo**, ou vous ouvrez `http://localhost:8069`, et
+le navigateur montre autre chose que la carte blanche de connexion : une page sur Odoo, un site web
+avec un logo factice, ou une liste de bases de données.
+
+**Ce que cela signifie.** L'adresse demandée n'est pas celle de votre ERP, ou c'est une adresse à
+laquelle plusieurs choses peuvent répondre. Il y a exactement trois cas, et chacun a sa cause.
+
+*C'est la documentation d'Odoo, sur odoo.com, dans la langue de votre navigateur.* C'est une page sur
+le produit, pas sur votre machine : rien de ce qu'elle contient n'est vos données et elle ne fait pas
+partie de l'installation. C'est ce qu'une version précédente de l'installateur ouvrait à la fin, et
+elle est encore imprimée à la fin comme lien à lire plus tard. Fermez-la et ouvrez la page de
+démarrage depuis l'icône.
+
+*C'est un site web avec un logo que vous n'avez pas choisi, un menu et un lien « Se connecter » dans
+un coin.* C'est l'application **website** d'Odoo : un module qui sert un site public à l'adresse
+racine. Une fois installé, `http://localhost:8069` montre le site au lieu de la page de connexion, et
+l'ERP se cache derrière le petit lien de connexion. Rien n'est cassé et aucune donnée n'est perdue. La
+page de connexion a sa propre adresse, et elle fonctionne toujours :
+`http://localhost:8069/web/login?db=odoo_agent`. La page de démarrage et l'icône utilisent cette
+adresse pour cette raison.
+
+*C'est une liste de bases de données, ou un formulaire qui demande quelle base vous voulez dire.* La
+machine garde plus d'une base Odoo—une copie de test, une ancienne installation—et l'adresse n'en
+nommait aucune. Ajoutez `?db=odoo_agent` à l'adresse, ou utilisez la page de démarrage, qui la nomme.
+
+---
+
+## L'identifiant et le mot de passe imprimés à la fin ne fonctionnent pas
+
+**Ce que vous voyez.** Les identifiants du résumé de l'installateur sont refusés, et la page de
+connexion dit que le nom d'utilisateur ou le mot de passe sont faux.
+
+**Ce que cela signifie.** À une première installation, l'installateur crée l'administrateur et imprime
+ce qu'il a créé, donc les deux coïncident. À une seconde exécution, le compte existe déjà et garde son
+identifiant et son mot de passe : imprimer là un mot de passe fraîchement inventé serait imprimer un
+mot de passe qui n'a jamais été appliqué. Maintenant l'installateur relit le compte dans la base et
+dit soit le mot de passe qu'il a posé, soit que le mot de passe est inchangé depuis la première
+installation.
+
+**Que faire.** Si le résumé dit *inchangé*, utilisez le mot de passe de la première installation. S'il
+est perdu, posez-en un nouveau exprès : relancez l'installateur avec `ADMIN_PASS` dans
+l'environnement, et il appliquera et imprimera ce mot de passe. Rien d'autre dans la base n'est
+touché.
+
+---
+
+## La fenêtre noire a disparu
+
+**Ce que vous voyez.** Odoo répond encore dans le navigateur, mais il n'y a plus de fenêtre où taper.
+
+**Ce que cela signifie.** La fenêtre noire *est* l'assistant : la fermer arrête l'assistant, et
+seulement l'assistant. L'ERP tourne comme un programme séparé, et c'est pourquoi le navigateur
+continue de fonctionner.
+
+**Que faire.** Double-cliquez de nouveau sur **AI Odoo**. Il démarre ce qui manque et ne démarre pas
+une seconde copie de ce qui tourne déjà.
+
+---
+
+## La page qui s'ouvre n'est pas celle de connexion
+
+**Ce que vous voyez.** Vous double-cliquez sur **AI Odoo**, ou vous ouvrez `http://localhost:8069`, et
+le navigateur montre autre chose que la carte blanche de connexion : une page sur Odoo, un site web
+avec un logo factice, ou une liste de bases de données.
+
+**Ce que cela signifie.** L'adresse demandée n'est pas celle de votre ERP, ou c'est une adresse à
+laquelle plusieurs choses peuvent répondre. Il y a exactement trois cas, et chacun a sa cause.
+
+*C'est la documentation d'Odoo, sur odoo.com, dans la langue de votre navigateur.* C'est une page sur
+le produit, pas sur votre machine : rien de ce qu'elle contient n'est vos données et elle ne fait pas
+partie de l'installation. C'est ce qu'une version précédente de l'installateur ouvrait à la fin, et
+elle est encore imprimée à la fin comme lien à lire plus tard. Fermez-la et ouvrez la page de
+démarrage depuis l'icône.
+
+*C'est un site web avec un logo que vous n'avez pas choisi, un menu et un lien « Se connecter » dans
+un coin.* C'est l'application **website** d'Odoo : un module qui sert un site public à l'adresse
+racine. Une fois installé, `http://localhost:8069` montre le site au lieu de la page de connexion, et
+l'ERP se cache derrière le petit lien de connexion. Rien n'est cassé et aucune donnée n'est perdue. La
+page de connexion a sa propre adresse, et elle fonctionne toujours :
+`http://localhost:8069/web/login?db=odoo_agent`. La page de démarrage et l'icône utilisent cette
+adresse pour cette raison.
+
+*C'est une liste de bases de données, ou un formulaire qui demande quelle base vous voulez dire.* La
+machine garde plus d'une base Odoo—une copie de test, une ancienne installation—et l'adresse n'en
+nommait aucune. Ajoutez `?db=odoo_agent` à l'adresse, ou utilisez la page de démarrage, qui la nomme.
+
+---
+
+## L'identifiant et le mot de passe imprimés à la fin ne fonctionnent pas
+
+**Ce que vous voyez.** Les identifiants du résumé de l'installateur sont refusés, et la page de
+connexion dit que le nom d'utilisateur ou le mot de passe sont faux.
+
+**Ce que cela signifie.** À une première installation, l'installateur crée l'administrateur et imprime
+ce qu'il a créé, donc les deux coïncident. À une seconde exécution, le compte existe déjà et garde son
+identifiant et son mot de passe : imprimer là un mot de passe fraîchement inventé serait imprimer un
+mot de passe qui n'a jamais été appliqué. Maintenant l'installateur relit le compte dans la base et
+dit soit le mot de passe qu'il a posé, soit que le mot de passe est inchangé depuis la première
+installation.
+
+**Que faire.** Si le résumé dit *inchangé*, utilisez le mot de passe de la première installation. S'il
+est perdu, posez-en un nouveau exprès : relancez l'installateur avec `ADMIN_PASS` dans
+l'environnement, et il appliquera et imprimera ce mot de passe. Rien d'autre dans la base n'est
+touché.
+
+---
+
+## La fenêtre noire a disparu
+
+**Ce que vous voyez.** Odoo répond encore dans le navigateur, mais il n'y a plus de fenêtre où taper.
+
+**Ce que cela signifie.** La fenêtre noire *est* l'assistant : la fermer arrête l'assistant, et
+seulement l'assistant. L'ERP tourne comme un programme séparé, et c'est pourquoi le navigateur
+continue de fonctionner.
+
+**Que faire.** Double-cliquez de nouveau sur **AI Odoo**. Il démarre ce qui manque et ne démarre pas
+une seconde copie de ce qui tourne déjà.
+
+---
+
 ## L'ERP ne répond pas sur son port
 
 **Ce que vous voyez.** Après l'installation, le navigateur ne peut pas atteindre l'adresse imprimée à la fin (le défaut est `http://localhost:8069`), ou le lanceur ouvre une page blanche.

@@ -72,51 +72,76 @@ Lo encontrará y comprobará su tamaño antes de usarlo.
 
 ## Paso 6 — Conservar el resumen
 
-Al final la ventana imprime algo como esto. Escríbelo o fotografía la pantalla.
+Al final la ventana imprime algo como esto. Escríbelo, o haz una foto de la pantalla.
 
 ```
-Odoo:          http://localhost:8069
-Administrador: admin@yourcompany.example
-Contraseña:      (la que generó el instalador, o la que le diste)
-Base de datos:   odoo en el puerto 5433
-Asistente:       AI Odoo (ícono de escritorio)
+  Odoo (el ERP, en el navegador):  http://localhost:8069
+  Usuario: admin@yourcompany.example
+  Contraseña: (la que generó el instalador, o la que le diste)
+  Asistente (háblale aquí):  http://localhost:5290/OfficeManager
 ```
 
-El navegador abre la página de primeros pasos del ERP. Esa página es el inicio de la configuración, no el fin
-de la instalación.
+Si la cuenta de administrador ya existía de una ejecución anterior, el instalador imprime el usuario
+que realmente está en la base de datos y dice que la contraseña no ha cambiado, en lugar de inventar
+una nueva que no funcionaría.
 
-## Paso 7 — Primer arranque del asistente
+El navegador abre la **página inicial**: un archivo en esta computadora con la dirección, la cuenta y
+un enlace. Esa página es el principio de la configuración, no el final de la instalación.
 
-Haz doble clic en el ícono **AI Odoo** del escritorio. Ocurren dos cosas: el ERP se inicia (si no estaba
-ejecutándose) y el asistente se abre en su propia ventana de terminal. El navegador abre la página del ERP.
+## Paso 7 — El icono, y las tres ventanas
 
-En su primer arranque el asistente pregunta por el proveedor de IA: elige el servicio, pega la clave y este
-recoge la lista de modelos de dicho servicio. No se necesita nada más—la dirección del ERP y la clave de acceso
-las escribió el instalador.
+Haz doble clic en el icono **AI Odoo** del escritorio. Ocurren tres cosas:
+
+1. el ERP arranca, si no estaba en ejecución;
+2. la página inicial se abre en el navegador;
+3. el asistente se abre en su propia ventana negra.
+
+*Abrir Odoo* en la página inicial lleva a la página de acceso en
+`http://localhost:8069/web/login?db=odoo_agent`. El asistente es la ventana negra, y es allí donde se
+escribe; hay que dejarla abierta mientras trabajas, porque cerrarla detiene el asistente, mientras
+Odoo sigue funcionando.
+
+En su primer arranque el asistente pregunta el proveedor de IA: elige el servicio, pega la clave, y
+obtiene la lista de modelos de ese servicio. No hace falta nada más—la dirección del ERP y la clave
+de acceso las escribió el instalador.
 
 ## Paso 8 — Comprobar que funciona
 
-Tres comprobaciones, en orden, y cada una te dice cuál de las tres máquinas está malcontenta si falla.
+Tres comprobaciones, en orden, y cada una te dice cuál de las tres máquinas está descontenta si
+falla.
 
-1. **El ERP.** Abre `http://localhost:8069` en un navegador y inicia sesión. Si la página no carga, el ERP o
-   la base de datos no están ejecutándose; el archivo `odoo.log` en la carpeta de instalación dice por qué.
-2. **El conector.** En el asistente, pregunta: *comprueba la conexión a Odoo y dime qué versión está
-   ejecutándose.* Un número de versión significa que la clave y la dirección son correctas.
-3. **El modelo.** Pregunta: *¿cuántos clientes tenemos?* Un número significa que el asistente puede leer los
-   datos del ERP como su usuario, con los permisos de ese usuario.
+1. **El ERP.** Haz clic en *Abrir Odoo* en la página inicial, o abre
+   `http://localhost:8069/web/login?db=odoo_agent` en un navegador, y entra. Si la página no se
+   carga, el ERP o la base de datos no están en ejecución; el archivo `odoo.log` en la carpeta de
+   instalación dice por qué.
+2. **El conector.** En el asistente, pregunta: *comprueba la conexión con Odoo y dime qué versión está
+   en ejecución.* Un número de versión significa que la clave y la dirección son correctas.
+3. **El modelo.** Pregunta: *¿cuántos clientes tenemos?* Un número significa que el asistente puede
+   leer los datos del ERP como su usuario, con los permisos de ese usuario.
 
 Si las tres responden, la instalación está completa.
 
 ## Desinstalar
 
-El stack vive en una sola carpeta, `%LOCALAPPDATA%\odoo-tool-stack`, más el servicio de base de datos y los
-datos de usuario en `%LOCALAPPDATA%\agent`. Para eliminarlo:
+Dos scripts deshacen la instalación, y son la forma admitida: `uninstall.bat` en Windows y
+`uninstall.sh` en Linux. Están junto al instalador en la misma versión, y cada uno puede descargarse y
+ejecutarse solo.
 
-1. Detén el ERP y el asistente (cierra sus ventanas).
-2. Desinstala PostgreSQL desde *Aplicaciones y características* (o ejecuta su desinstalador) y elimina la carpeta
-   que deja en `C:\Program Files\PostgreSQL` si queda algo.
-3. Elimina `%LOCALAPPDATA%\odoo-tool-stack` y `%LOCALAPPDATA%\agent`.
-4. Elimina el acceso directo **AI Odoo** del escritorio y del menú Inicio.
+Qué eliminan:
 
-Eso es todo el proceso de eliminación. No se registra nada en ningún otro lugar, lo que es una de las ventajas
-de un sistema que se ejecuta en tu propia máquina.
+- la base de datos de Odoo, con cada cliente, producto, pedido, factura y movimiento de existencias;
+- la carpeta de instalación (`%LOCALAPPDATA%\odoo-tool-stack`, o `~/odoo-tool-stack`);
+- los accesos directos **AI Odoo** y la regla del firewall.
+
+Preguntan dos veces, y la segunda pregunta no es una formalidad. La primera es un sí/no que enumera
+lo que desaparece. La segunda exige la frase **DESTROY ALL**, escrita en mayúsculas. Si la frase no
+es exacta, no se toca nada—ni un archivo, ni una fila. El borrado es irreversible y el desinstalador
+no hace ninguna copia de seguridad, así que una copia de la base tomada antes es el único camino de
+vuelta.
+
+AgentBridge se pregunta aparte, porque puede alojar otras herramientas y guarda sus propios ajustes y
+claves de API: responder *no* lo conserva y quita solo la mitad Odoo.
+
+PostgreSQL queda instalado. Es un servicio que otros programas pueden compartir, y se quita en
+*Aplicaciones y características* como cualquier otro programa, cuando nada más lo necesita. El rol de
+base de datos `odoo` queda y es inofensivo: una futura instalación lo reutiliza.

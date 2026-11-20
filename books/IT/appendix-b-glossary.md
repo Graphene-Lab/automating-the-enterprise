@@ -24,6 +24,10 @@ Ogni parola qui sotto è una di quelle che questo libro ha usato, o che qualcuno
 
 **Modello linguistico (LLM).** Un programma addestrato su una quantità enorme di testo, capace di produrre testo plausibile in risposta a una istruzione. È bravo con il linguaggio e inaffidabile con i fatti, a meno che non sia *radicato*—cioè a meno che non venga fatto cercare i fatti invece di ricordarli.
 
+**Localhost.** Il nome che un computer usa per se stesso. `localhost:8069` significa *il programma
+su questa macchina in ascolto alla porta 8069*, e si apre solo da quella macchina. È l'opposto del
+nome di dominio di un'azienda, che risolve al computer di qualcun altro.
+
 **MCP.** Model Context Protocol. Uno standard aperto, pubblicato da Anthropic nel novembre 2024, che permette a un programma di descrivere gli strumenti che offre a un assistente in modo uniforme. È la ragione per cui uno strumento scritto per un assistente può essere usato da un altro.
 
 **Modello (in questo libro, due significati).** 1. La rappresentazione di una azienda all'interno di un ERP: parti, prodotti, documenti, denaro. 2. L'artefatto addestrato dietro un assistente: il "modello linguistico." Il contesto chiarisce quale; quando non lo fa, di solito il significato che conta è il primo.
@@ -49,6 +53,12 @@ Ogni parola qui sotto è una di quelle che questo libro ha usato, o che qualcuno
 **Transazione.** Una modifica che accade completamente o per niente. È la promessa che rende affidabile un database: non esiste uno stato in cui esista mezza fattura.
 
 **Variante.** Una versione di un prodotto che differisce per un attributo—dimensione, colore, tensione. Un prodotto con dodici varianti non è dodici prodotti, e modellarlo correttamente è la differenza tra un report utile e uno inutile.
+
+**Applicazione web.** Un programma le cui schermate sono pagine in un browser. Può girare sul
+computer di qualcun altro—la sistemazione cloud, raggiunta con un indirizzo internet e pagata a
+mese—oppure sul tuo, come in questo libro: il programma e il suo database stanno sul tuo disco e il
+browser si collega a loro su `localhost`. Le due si vedono identiche sullo schermo e differiscono in
+chi tiene in funzione la macchina.
 
 **Interfaccia web (o web UI).** Le schermate che vedi in un browser. L'interfaccia web di Odoo è dove configuri la azienda, guardi le registrazioni, e stampi i documenti; l'assistente è un secondo modo per raggiungere le stesse registrazioni.
 

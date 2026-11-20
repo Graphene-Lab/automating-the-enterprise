@@ -38,6 +38,63 @@ Antes que nada, un hábito. Cuando algo sale mal, no reinstales. Lee las veinte 
 
 ---
 
+## La página que se abre no es la de acceso
+
+**Qué ves.** Haces doble clic en **AI Odoo**, o abres `http://localhost:8069`, y el navegador muestra
+algo que no es la tarjeta blanca de acceso: una página sobre Odoo, un sitio web con un logo de relleno,
+o una lista de bases de datos.
+
+**Qué significa.** La dirección que pediste no es la de tu ERP, o es una dirección a la que pueden
+responder varias cosas. Hay exactamente tres casos, y cada uno tiene su causa.
+
+*Es la documentación de Odoo, en odoo.com, en el idioma de tu navegador.* Es una página sobre el
+producto, no sobre tu máquina: nada de lo que hay es un dato tuyo y no forma parte de la instalación.
+Es lo que una versión anterior del instalador abría al final, y todavía se imprime al final como
+enlace para leer después. Ciérrala y abre la página inicial desde el icono.
+
+*Es un sitio web con un logo que no elegiste, un menú y un enlace «Iniciar sesión» en una esquina.* Es
+la aplicación **website** de Odoo: un módulo que sirve un sitio público en la dirección raíz. Una vez
+instalado, `http://localhost:8069` muestra el sitio en lugar de la página de acceso, y el ERP se
+esconde detrás del pequeño enlace de acceso. No hay nada roto y no se ha perdido ningún dato. La
+página de acceso tiene su propia dirección, y funciona siempre:
+`http://localhost:8069/web/login?db=odoo_agent`. La página inicial y el icono usan esa dirección por
+este motivo.
+
+*Es una lista de bases de datos, o un formulario que pregunta qué base quieres decir.* La máquina tiene
+más de una base Odoo—una copia de prueba, una instalación vieja—y la dirección no nombraba ninguna.
+Añade `?db=odoo_agent` a la dirección, o usa la página inicial, que la nombra.
+
+---
+
+## El usuario y la contraseña impresos al final no funcionan
+
+**Qué ves.** Las credenciales del resumen del instalador son rechazadas, y la página de acceso dice
+que el nombre de usuario o la contraseña son incorrectos.
+
+**Qué significa.** En una primera instalación el instalador crea el administrador e imprime lo que ha
+creado, así que las dos cosas coinciden. En una segunda ejecución la cuenta ya existe y conserva su
+usuario y su contraseña: imprimir ahí una contraseña recién inventada sería imprimir una contraseña
+que nunca se aplicó. Ahora el instalador vuelve a leer la cuenta de la base de datos y dice o la
+contraseña que ha puesto, o que la contraseña no ha cambiado desde la primera instalación.
+
+**Qué hacer.** Si el resumen dice *sin cambios*, usa la contraseña de la primera instalación. Si se ha
+perdido, pon una nueva a propósito: ejecuta otra vez el instalador con `ADMIN_PASS` en el entorno, y
+aplicará e imprimirá esa contraseña. Nada más en la base de datos se toca.
+
+---
+
+## La ventana negra ha desaparecido
+
+**Qué ves.** Odoo sigue respondiendo en el navegador, pero no hay ninguna ventana donde escribir.
+
+**Qué significa.** La ventana negra *es* el asistente: cerrarla detiene el asistente, y solo al
+asistente. El ERP se ejecuta como un programa separado, y por eso el navegador sigue funcionando.
+
+**Qué hacer.** Haz doble clic otra vez en **AI Odoo**. Arranca lo que falta y no arranca una segunda
+copia de lo que ya está en marcha.
+
+---
+
 ## El ERP no responde en su puerto
 
 **Qué verás.** Tras la instalación, el navegador no alcanza la dirección impresa al final (el valor por defecto es `http://localhost:8069`), o el lanzador abre una página en blanco.
