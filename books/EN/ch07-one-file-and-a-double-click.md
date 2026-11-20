@@ -166,18 +166,23 @@ Then the window printed a summary. It is worth quoting, because it is the only p
 installation that a user must keep.
 
 ```
-==> Done
+==> Done.
+  HOW TO START:
+    Double-click the 'AI Odoo' icon on the Desktop (or in the Start Menu).
+    A page opens in the browser: it says what is running here and has the two links.
+      'Open Odoo'             the ERP, where the data is. Log in with the account below.
+    A black window also opens: that is the assistant. Type there, for example
+    'list the customers', and leave it open while you work.
 
-Odoo:          http://localhost:8069
-Administrator: admin@riverton.example
-Password:      OdooDemo2026
-Database:      odoo on port 5433
-Assistant:     AI Odoo (desktop icon)
+  Odoo (the ERP, in the browser):  http://localhost:8069
+  Login: admin@riverton.example
+  Password: OdooDemo2026
+  Assistant (talk to it here):  http://localhost:5290/OfficeManager
 ```
 
 Three of those lines are the ones Maggie wrote on the sheet of paper and put in the drawer with the
-napkin: the address, the user, the password. The fourth is the port, which she did not need to
-know, and the fifth is the icon she would double-click every morning for the next year.
+napkin: the address, the user, the password. The fourth is the chat's address, which she did not
+need to know, and the fifth is the icon she would double-click every morning for the next year.
 
 ## What the installer will not do
 
@@ -207,16 +212,31 @@ is about.
 ---
 
 There is a small piece of theatre at the end which is easy to miss and which tells you something
-about the people who wrote the installer. Having finished, it opens the ERP's first-steps page in
-the browser. Not the assistant, not a marketing page: the page where a new company is asked what
-currency it uses, what its chart of accounts should look like, and what it sells.
+about the people who wrote the installer. Having finished, it opens a page in the browser that the
+installer wrote itself: a file on this computer, not a website, with one large button and the
+account it just created.
+
+![The start page: what is running on this computer, and the door into it](../../assets/screens/start-01-start-page.png)
+
+It is not the assistant, and it is not a marketing page. It is the one thing a person needs at that
+moment: a plain statement of what is now running on this machine, one door into the ERP, and the
+account that opens it. The assistant is not on that page and does not need to be: it is the black
+window the same icon opens, and that is where a request is typed.
+
+An earlier version of this installer ended by opening the vendor's documentation site, and a reader
+of the previous edition described what happened next: he saw a page about Odoo, in the language of
+his browser, closed it because it had nothing to do with his installation, double-clicked the icon,
+landed on a web page with a placeholder logo, and concluded that the whole thing had failed. Every
+word on that documentation page was true, and none of it was about *his* computer. The page in the
+picture is.
 
 The message is: you are not finished, you have just arrived. The next hour is configuration, and
 it is the hour that decides whether the system becomes the truth or becomes another abandoned
 program. The installer cannot do that part for you, and it does not pretend to.
 
-Maggie sat in front of the first-steps page for a long moment. Then she called Doreen, because the
-chart of accounts was going to be an argument, and it was better to have the argument with the
-person who had been keeping the books for thirty-one years than to have it with a consultant.
+Maggie read the page twice, wrote the login and the password on the sheet of paper, and clicked
+*Open Odoo*. Then she called Doreen, because the chart of accounts was going to be an argument, and
+it was better to have the argument with the person who had been keeping the books for thirty-one
+years than to have it with a consultant.
 
 That conversation is the next chapter.

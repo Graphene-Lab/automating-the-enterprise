@@ -45,6 +45,10 @@ ever see it in a log file, where it looks like a paragraph of punctuation.
 plausible text in response to an instruction. It is good at language and unreliable at facts unless
 it is *grounded*—that is, unless it is made to look the facts up instead of remembering them.
 
+**Localhost.** The name a computer uses for itself. `localhost:8069` means *the program on this
+machine listening at door 8069*, and it opens only from that machine. It is the opposite of a
+company's domain name, which resolves to somebody else's computer.
+
 **MCP.** Model Context Protocol. An open standard, published by Anthropic in November 2024, that
 lets a program describe the tools it offers to an assistant in a uniform way. It is why a tool
 written for one assistant can be used by another.
@@ -92,6 +96,11 @@ makes a database trustworthy: there is no state in which half an invoice exists.
 **Variant.** A version of a product that differs in one attribute—size, colour, voltage. One
 product with twelve variants is not twelve products, and modelling it correctly is the difference
 between a useful report and a useless one.
+
+**Web application.** A program whose screens are pages in a browser. It can run on somebody else's
+computer—the cloud arrangement, reached through an internet address and paid for monthly—or on your
+own, as in this book: the program and its database sit on your disk and the browser connects to
+them at `localhost`. The two look identical on screen and differ in who keeps the machine running.
 
 **Web interface (or web UI).** The screens you see in a browser. Odoo's web interface is where you
 configure the company, look at records, and print documents; the assistant is a second way to reach

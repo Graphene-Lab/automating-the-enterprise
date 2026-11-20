@@ -101,13 +101,13 @@ will still show what it did.
 
 ## The assistant
 
-The assistant arrives as a public release: an executable, a folder of tools, and the desktop chat
-client. The installer unpacks it, installs the connector into it, and creates the **AI Odoo**
-shortcut.
+The assistant arrives as a public release: an executable, a folder of tools, and a browser chat.
+The installer unpacks it, installs the connector into it, and creates the **AI Odoo** shortcut.
 
 The shortcut is the piece that makes the system feel like a product rather than a science project.
-Double-clicking it starts the ERP if it is not running, opens the ERP page in the browser, and
-opens the assistant in a terminal window. One icon, three windows, and the work can begin.
+Double-clicking it starts the ERP if it is not running, opens the start page in the browser, and
+opens the assistant in a terminal window. One icon, and then two windows: the page that says where
+everything is, and the black window where you type. The work can begin.
 
 The assistant's own configuration—which AI provider, which model, which key—is asked for on its
 first start, by the assistant itself, in the same terminal window where you will type your

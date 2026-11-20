@@ -66,6 +66,62 @@ again.
 
 ---
 
+## The page that opens is not the login page
+
+**What you see.** You double-click **AI Odoo**, or open `http://localhost:8069`, and the browser
+shows something that is not the white login card: a page about Odoo, a website with a placeholder
+logo, or a list of databases.
+
+**What it means.** The address you asked for is not the address of your ERP, or it is an address
+that several things can answer. There are exactly three cases, and each has its own cause.
+
+*It is Odoo's own documentation, on odoo.com, in the language of your browser.* That is a page about
+the product, not about your machine: nothing on it is your data and it is not part of the
+installation. It is what an earlier version of the installer opened at the end, and it is still
+printed at the end as a link for later reading. Close it and open the start page from the icon.
+
+*It is a website with a logo you did not choose, a menu and a "Sign in" link in a corner.* That is
+Odoo's **website** application: a module that serves a public site at the root address. Once it is
+installed, `http://localhost:8069` shows the site instead of the login page, and the ERP hides
+behind the small sign-in link. Nothing is broken and no data is lost. The login page has its own
+address, and it always works: `http://localhost:8069/web/login?db=odoo_agent`. The start page and
+the icon use that address for this reason.
+
+*It is a list of databases, or a form asking which database you mean.* The machine holds more than
+one Odoo database—a test copy, an older installation—and the address did not name one. Add
+`?db=odoo_agent` to the address, or use the start page, which names it.
+
+---
+
+## The login and password printed at the end do not work
+
+**What you see.** The credentials in the installer's summary are rejected, and the login page says
+the username or password is wrong.
+
+**What it means.** On a first installation the installer creates the administrator and prints what
+it created, so the two agree. On a second run the account already exists, and it keeps the login and
+password it had: printing a newly invented password there would be printing a password that was
+never applied. The installer now reads the account back from the database and says either the
+password it set, or that the password is unchanged since the first installation.
+
+**What to do.** If the summary says *unchanged*, use the password from the first installation. If it
+is lost, set a new one deliberately: run the installer again with `ADMIN_PASS` set in the
+environment, and it will apply and print that password. Nothing else in the database is touched.
+
+---
+
+## The black window disappeared
+
+**What you see.** Odoo still answers in the browser, but there is no window to type in.
+
+**What it means.** The black window *is* the assistant: closing it stops the assistant, and only the
+assistant. The ERP runs as a separate program, which is why the browser keeps working.
+
+**What to do.** Double-click **AI Odoo** again. It starts what is missing and does not start a
+second copy of what is already running.
+
+---
+
 ## The ERP does not answer on its port
 
 **What you see.** After the installation, the browser cannot reach the address printed at the end

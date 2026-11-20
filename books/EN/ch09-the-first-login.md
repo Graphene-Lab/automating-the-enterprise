@@ -1,16 +1,101 @@
 # 9. The First Login
 
-The browser opened on its own, which is the sort of small courtesy that makes a system feel
-finished. The address was `http://localhost:8069`—`localhost` being the machine's way of saying
-*this computer*, and 8069 being the door the ERP listens behind.
+The icon opened two windows, which is one more than most programs open.
 
-The page that appeared was almost empty: a white card, a logo made of two purple shapes, and two
-fields.
+The first was a page in the browser: the start page from the previous chapter, with its one door
+and the account. The second was a black window with a cursor in it and a short question about the
+AI provider. Between them they were the whole system—the page was where the data would be looked
+at, the black window was where it would be asked for.
 
-![The ERP's login page, on the machine that is running it](../../assets/screens/odoo-01-login.png)
+Before Maggie clicked anything she asked the question that stops most people at this point, and it
+is worth answering slowly, because everything else in this book assumes the answer.
+
+"What am I looking at?"
+
+## A program that lives in a browser
+
+Odoo is a **web application**. The phrase covers two different arrangements of the same software,
+and the difference decides who is responsible for it.
+
+In the familiar arrangement—the cloud one—the program runs on a computer belonging to somebody
+else, in a building you have never visited, and your browser is a window onto it. You type an
+address such as `riverton.odoo.com`, the request travels over the internet, and a machine in a data
+centre answers. Nothing is installed on your desk. You rent the program by the month, somebody else
+keeps it running, and in exchange your customer list lives on their disk.
+
+In the arrangement this book uses, the program runs on the computer in front of you. There is no
+building and no monthly invoice: there is a folder on your disk, a database on the same disk, and a
+small program that listens for requests and answers them. The browser is still the screen, but the
+machine behind the screen is yours.
+
+That is why the address looks strange. `localhost` is the name a computer uses for **itself**:
+`localhost:8069` means *the program on this machine, listening at door 8069*. It is not a company,
+it is not a website, and it does not open from anybody else's computer—which is exactly the point.
+The address is the door, and the door is in your office.
+
+Two consequences follow, and both surprise people who have only used cloud software.
+
+The first is that **the program has to be running**. A cloud service is always up because somebody
+is paid to keep it up; your copy is up when the black window, or a hidden background process, is
+running it. If the machine is off, or the program was stopped, the browser shows a page that cannot
+connect—not a fault in your data, just a door with nobody behind it. Double-clicking the icon again
+starts it, which is the answer to most of the questions in this chapter.
+
+The second is that **the address is not optional**. There is no menu entry that opens Odoo directly,
+because Odoo has no window of its own: its window is a browser tab, and a browser tab needs an
+address. This is the small piece of knowledge that the previous edition of this book assumed, and a
+reader's report proved the assumption wrong. A person who has never looked after a server has no
+reason to know that a web application is reached by typing its address, and no way to guess
+`localhost:8069` from a desktop icon that opens something else.
+
+That is the whole reason the start page exists. It is not decoration: it is the address, written
+down, with the account next to it.
+
+## The black window is the assistant
+
+The second window has no title, no menus and no buttons: a black rectangle with a cursor. It is the
+assistant, and it is the only place where a sentence can be typed.
+
+It looks unfinished because it is not a consumer program. It is a *terminal*—the plain text surface
+that programs have used since before the mouse existed—and the assistant speaks there because that
+is where a conversation with a machine is cheapest and clearest: no layout to maintain, no button
+to hunt for, and the answer printed in the order it was produced, wrong turns included.
+
+The three windows have three different owners, and knowing which one may be closed is most of what
+a new user needs:
+
+| Window | What it is | If you close it |
+|---|---|---|
+| The start page | a file on your disk, opened by the browser | nothing happens; the icon opens it again |
+| The browser tab with Odoo | the ERP, served by the program on this machine | nothing happens; the data stays and the program keeps running |
+| The black window | the assistant | the assistant stops. Odoo keeps running, and the icon starts the assistant again |
+
+Maggie left the start page open, because the address was on it, and clicked *Open Odoo*.
+
+## The login page, and the part of the address that matters
+
+The browser went to `http://localhost:8069/web/login?db=odoo_agent`, and the page was almost empty:
+a white card, a logo made of two purple shapes, and two fields.
+
+![The ERP's login page. The address bar is part of the picture: this is a program on this computer, at the door 8069](../../assets/screens/odoo-01-login.png)
+
+The `db` part of the address names the database. `odoo_agent` is the one the installer created, and
+naming it means the browser cannot land on a different one by accident—a machine can hold several
+databases, a test copy and a real one, and without the name Odoo asks which you mean. It is not a
+setting to remember: the start page and the icon write it for you.
+
+One thing on this page is a trap, and it is worth naming before it is clicked. At the bottom, in
+small grey letters, is a link called *Manage Databases*. It opens Odoo's own database manager, which
+can create, duplicate, back up and **delete** databases, and it asks for a master password that has
+nothing to do with your login. The installer has already created the database; the manager is a tool
+for an administrator who knows why he opened it. Nothing in this book needs it.
 
 Maggie typed the administrator address the installer had printed, and the password, and pressed
 Enter.
+
+If the page in your browser is not this one, it is one of three things, and none of them means the
+installation failed: a page about Odoo on the vendor's website, a website with a logo you did not
+choose, or a list of databases. Appendix C takes them one at a time.
 
 Nothing dramatic happened. That is the first thing worth saying about the ERP: it does not greet
 you. It does not congratulate you. It opens a page with a menu across the top and a few coloured
